@@ -13,6 +13,8 @@
 		2B6D030419DB720D000C1A07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B6D030319DB720D000C1A07 /* Images.xcassets */; };
 		2B6D030719DB720D000C1A07 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6D030519DB720D000C1A07 /* LaunchScreen.xib */; };
 		2B6D031319DB720D000C1A07 /* swift_badgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D031219DB720D000C1A07 /* swift_badgeTests.swift */; };
+		2B6D031D19DB7221000C1A07 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B6D031C19DB7221000C1A07 /* Default-568h@2x.png */; };
+		2B6D031F19DB725C000C1A07 /* SwiftBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D031E19DB725C000C1A07 /* SwiftBadge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		2B6D030C19DB720D000C1A07 /* swift-badgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-badgeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6D031119DB720D000C1A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B6D031219DB720D000C1A07 /* swift_badgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_badgeTests.swift; sourceTree = "<group>"; };
+		2B6D031C19DB7221000C1A07 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2B6D031E19DB725C000C1A07 /* SwiftBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftBadge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		2B6D02EE19DB720D000C1A07 = {
 			isa = PBXGroup;
 			children = (
+				2B6D031C19DB7221000C1A07 /* Default-568h@2x.png */,
 				2B6D02F919DB720D000C1A07 /* swift-badge */,
 				2B6D030F19DB720D000C1A07 /* swift-badgeTests */,
 				2B6D02F819DB720D000C1A07 /* Products */,
@@ -77,6 +82,7 @@
 		2B6D02F919DB720D000C1A07 /* swift-badge */ = {
 			isa = PBXGroup;
 			children = (
+				2B6D031E19DB725C000C1A07 /* SwiftBadge.swift */,
 				2B6D02FC19DB720D000C1A07 /* AppDelegate.swift */,
 				2B6D02FE19DB720D000C1A07 /* ViewController.swift */,
 				2B6D030019DB720D000C1A07 /* Main.storyboard */,
@@ -193,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B6D030219DB720D000C1A07 /* Main.storyboard in Resources */,
+				2B6D031D19DB7221000C1A07 /* Default-568h@2x.png in Resources */,
 				2B6D030719DB720D000C1A07 /* LaunchScreen.xib in Resources */,
 				2B6D030419DB720D000C1A07 /* Images.xcassets in Resources */,
 			);
@@ -214,6 +221,7 @@
 			files = (
 				2B6D02FF19DB720D000C1A07 /* ViewController.swift in Sources */,
 				2B6D02FD19DB720D000C1A07 /* AppDelegate.swift in Sources */,
+				2B6D031F19DB725C000C1A07 /* SwiftBadge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -326,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
