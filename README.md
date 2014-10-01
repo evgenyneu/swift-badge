@@ -16,11 +16,14 @@ Copy `SwiftBadge.swift` to your project. A badge can be created and positioned s
 
 <img src='https://raw.githubusercontent.com/exchangegroup/swift-badge/master/graphics/swift-badge-class.png' alt='Add badge to storyboard'>
 
-* Add auto layout constraints to position the badge. There is no need to set the size constrtaints, it will be determined dynamically based on badge text. You can see how it is done in this demo app.
+* Add auto layout constraints to position the badge.
 * Font can be set in the attribute inspector.
 * One needs to write code to customize colors and shadows (see below). 
 
-Note: badge will still look like an ordinary label in storyboard.
+Note: 
+
+* Badge will still look like an ordinary label in storyboard.
+* There is no need to set size or width/height constraints, it will be determined dynamically based on badge text. You can see how it is done in this demo app.
 
 ### Creating a badge from code
 
