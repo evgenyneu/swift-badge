@@ -37,6 +37,9 @@ badge.layer.shadowOffset = CGSize(width: 0, height: 0)
 badge.layer.shadowRadius = 1.0
 badge.layer.shadowColor = UIColor.blackColor().CGColor
 
+// no shadow
+badge.layer.shadowOpacity = 0
+
 ```
 
 If properties are changed after the view was first rendered call `badge.invalidateIntrinsicContentSize()`.
