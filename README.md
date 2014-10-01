@@ -12,7 +12,7 @@ Copy `SwiftBadge.swift` to your project. A badge can be created and positioned s
 ### Creating a badge in storyboard
 
 * Drag a **Label** to your view.
-* Set its `class` to `SwiftBadge` in identity inspector 
+* Set its `class` to `SwiftBadge` in identity inspector.
 
 <img src='https://raw.githubusercontent.com/exchangegroup/swift-badge/master/graphics/swift-badge-class.png' alt='Add badge to storyboard'>
 
