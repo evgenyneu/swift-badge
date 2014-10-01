@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -24,7 +24,7 @@
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ev-tM-KVo">
-                                <rect key="frame" x="183" y="543" width="62" height="20.5"/>
+                                <rect key="frame" x="183" y="543" width="62" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,7 +36,13 @@
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inset" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13T-St-T7J">
-                                <rect key="frame" x="207.5" y="506.5" width="37.5" height="20.5"/>
+                                <rect key="frame" x="207" y="506" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alJ-1t-bdH" customClass="SwiftBadge" customModule="swift_badge" customModuleProvider="target">
+                                <rect key="frame" x="295" y="289" width="10" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,12 +55,15 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7b7-ic-y1K" secondAttribute="bottom" constant="32" id="LZp-oC-UH9"/>
                             <constraint firstItem="ini-LD-qC8" firstAttribute="leading" secondItem="13T-St-T7J" secondAttribute="trailing" constant="8" id="VCI-ct-8o2"/>
                             <constraint firstItem="ini-LD-qC8" firstAttribute="centerY" secondItem="13T-St-T7J" secondAttribute="centerY" id="VEN-La-Q9V"/>
+                            <constraint firstAttribute="centerY" secondItem="alJ-1t-bdH" secondAttribute="centerY" constant="0.5" id="Yvh-NQ-EKl"/>
                             <constraint firstItem="7b7-ic-y1K" firstAttribute="centerY" secondItem="9ev-tM-KVo" secondAttribute="centerY" id="Yw3-GT-Q9g"/>
                             <constraint firstItem="7b7-ic-y1K" firstAttribute="leading" secondItem="ini-LD-qC8" secondAttribute="leading" id="aA8-ua-WrM"/>
+                            <constraint firstAttribute="centerX" secondItem="alJ-1t-bdH" secondAttribute="centerX" id="loL-Iw-QO5"/>
                             <constraint firstAttribute="centerX" secondItem="7b7-ic-y1K" secondAttribute="centerX" id="mQm-dp-txT"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="badge" destination="alJ-1t-bdH" id="L9m-6M-KBG"/>
                         <outlet property="insetStepper" destination="ini-LD-qC8" id="zSD-95-ij6"/>
                         <outlet property="valueStepper" destination="7b7-ic-y1K" id="gQF-wH-Bno"/>
                     </connections>
