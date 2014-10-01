@@ -11,21 +11,29 @@ import UIKit
 class ViewController: UIViewController {
 
   @IBOutlet weak var valueStepper: UIStepper!
+  @IBOutlet weak var insetStepper: UIStepper!
 
   let defaultBadgeValue = 1.0
+  let defaultInsetValue = 2.0
+
   var badge: SwiftBadge?
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
     valueStepper.value = defaultBadgeValue
+    insetStepper.value = defaultInsetValue
+
     createBadge()
 
     updatebadgeValue()
+    updateInsetValue()
   }
 
   private func createBadge() {
     let newBadge = SwiftBadge()
+
+    newBadge.defaultInsets = CGSize(width: 12, height: 12)
 
     badge = newBadge
 
@@ -64,6 +72,18 @@ class ViewController: UIViewController {
   private func updatebadgeValue() {
     if let currentBadge = badge {
       currentBadge.text = formatBadgeValue(valueStepper.value)
+    }
+  }
+
+  @IBAction func onInsetStepperChanged(sender: AnyObject) {
+    updateInsetValue()
+  }
+
+  private func updateInsetValue() {
+    if let currentBadge = badge {
+      var inset = insetStepper.value
+      currentBadge.defaultInsets = CGSize(width: inset, height: inset)
+      currentBadge.invalidateIntrinsicContentSize()
     }
   }
 

@@ -34,7 +34,7 @@ class SwiftBadge: UILabel {
 
     // Shadow
     layer.shadowOpacity = 0.5
-    layer.shadowOffset = CGSize(width: 1, height: 1)
+    layer.shadowOffset = CGSize(width: 0, height: 0)
     layer.shadowRadius = 0.5
     layer.shadowColor = UIColor.blackColor().CGColor
   }
@@ -49,8 +49,8 @@ class SwiftBadge: UILabel {
     actualInsets = defaultInsets
     var rectWithDefaultInsets = CGRectInset(rect, -actualInsets.width, -actualInsets.height)
 
-    // Adjust the width insets to make it square
     // If width is less than height
+    // Adjust the width insets to make it look round
     if rectWithDefaultInsets.width < rectWithDefaultInsets.height {
       actualInsets.width = (rectWithDefaultInsets.height - rect.width) / 2
     }
