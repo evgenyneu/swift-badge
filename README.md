@@ -23,7 +23,7 @@ Copy `SwiftBadge.swift` to your project. A badge can be created and positioned s
 Note: 
 
 * Badge will still look like an ordinary label in storyboard.
-* There is no need to set size or width/height constraints, it will be determined dynamically based on badge text. You can see how it is done in this demo app.
+* There is no need to set size or width/height constraints in the storyboard. The size will be determined dynamically based on badge text. You can see how it is done in this demo app.
 
 ### Creating a badge from code
 
