@@ -47,7 +47,7 @@ If properties are changed after the view was first rendered call `badge.invalida
 
 ## Alternative
 
-There is a good alternative badge created by by Sascha Paulus in Objective-C.
+There is a greate alternative badge created by Sascha Paulus in Objective-C.
 
 https://github.com/ckteebe/CustomBadge
 
