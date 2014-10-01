@@ -20,6 +20,7 @@ Copy `SwiftBadge.swift` to your project. A badge can be created and positioned s
 * Font can be set in the attribute inspector.
 * One needs to write code to customize colors and shadows (see below). 
 
+Note: badge will still look like an ordinary label in storyboard.
 
 ### Creating a badge from code
 
