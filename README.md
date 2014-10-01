@@ -39,7 +39,6 @@ badge.layer.shadowColor = UIColor.blackColor().CGColor
 
 // no shadow
 badge.layer.shadowOpacity = 0
-
 ```
 
 If properties are changed after the view was first rendered call `badge.invalidateIntrinsicContentSize()`.
