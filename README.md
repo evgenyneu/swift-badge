@@ -45,3 +45,9 @@ badge.layer.shadowOpacity = 0
 
 If properties are changed after the view was first rendered call `badge.invalidateIntrinsicContentSize()`.
 
+## Alternative
+
+There is a good alternative badge created by by Sascha Paulus in Objective-C.
+
+https://github.com/ckteebe/CustomBadge
+
