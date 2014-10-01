@@ -1,7 +1,7 @@
 # Overview
 
-This is a badge view for iOS 7+. The style is similar to springboard badge in iOS 7 or 8.
-It is a subclass of UILabel view.
+This is a badge view for iOS 7+. The style is similar to the springboard badges in iOS 7 or 8.
+The view is a subclass of UILabel view.
 
 ## Usage
 
