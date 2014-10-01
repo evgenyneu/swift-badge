@@ -5,7 +5,7 @@ The view is a subclass of UILabel view.
 
 ## Usage
 
-Badge can be created and positioned similar to any UIView.
+Copy `SwiftBadge.swift` to your project. A badge can be created and positioned similar to any UIView.
 
 ```
 let badge = SwiftBadge()
