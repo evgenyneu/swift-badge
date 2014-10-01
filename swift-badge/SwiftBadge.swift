@@ -9,8 +9,8 @@
 import UIKit
 
 class SwiftBadge: UILabel {
-  // Padding between label text and its border
-  var edgeInsets:UIEdgeInsets = UIEdgeInsets(top: 2, left: 7.5, bottom: 2, right: 7.5)
+  var defaultInsets = CGSize(width: 6, height: 2)
+  var actualInsets = CGSize()
 
   override init() {
     super.init()
@@ -39,28 +39,38 @@ class SwiftBadge: UILabel {
     layer.shadowColor = UIColor.blackColor().CGColor
   }
 
-  override func intrinsicContentSize() -> CGSize {
-    let size = super.intrinsicContentSize()
-
-    println("intrinsic size \(size)")
-    layer.cornerRadius = size.height / 2
-    return size
-  }
-
   // Add custom insets
   // --------------------
   override func textRectForBounds(bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
-    var rect = super.textRectForBounds(UIEdgeInsetsInsetRect(bounds, edgeInsets), limitedToNumberOfLines: numberOfLines)
+    let rect = super.textRectForBounds(bounds, limitedToNumberOfLines: numberOfLines)
 
-    rect.origin.x -= edgeInsets.left
-    rect.origin.y -= edgeInsets.top
-    rect.size.width  += (edgeInsets.left + edgeInsets.right);
-    rect.size.height += (edgeInsets.top + edgeInsets.bottom);
+    println("textRectForBounds bounds \(bounds) rect \(rect.size)")
 
-    return rect
+    actualInsets = defaultInsets
+    var rectWithDefaultInsets = CGRectInset(rect, -actualInsets.width, -actualInsets.height)
+
+    // Adjust the width insets to make it square
+    // If width is less than height
+    if rectWithDefaultInsets.width < rectWithDefaultInsets.height {
+      actualInsets.width = (rectWithDefaultInsets.height - rect.width) / 2
+    }
+
+    return CGRectInset(rect, -actualInsets.width, -actualInsets.height)
   }
 
+  // Draw text in the rect without insets
   override func drawTextInRect(rect: CGRect) {
-    super.drawTextInRect(UIEdgeInsetsInsetRect(rect, edgeInsets))
+
+    layer.cornerRadius = rect.height / 2
+
+    let insets = UIEdgeInsets(
+      top: actualInsets.height,
+      left: actualInsets.width,
+      bottom: actualInsets.height,
+      right: actualInsets.width)
+
+    let rectWithoutInsets = UIEdgeInsetsInsetRect(rect, insets)
+
+    super.drawTextInRect(rectWithoutInsets)
   }
 }

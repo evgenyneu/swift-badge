@@ -29,6 +29,8 @@ class ViewController: UIViewController {
 
     badge = newBadge
 
+    newBadge.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+
     view.addSubview(newBadge)
 
     addCenterXConstraints(newBadge)
