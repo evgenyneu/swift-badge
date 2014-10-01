@@ -8,8 +8,9 @@
 
 import UIKit
 
-class SwiftBadge: UIView {
-  var text = ""
+class SwiftBadge: UILabel {
+  // Padding between label text and its border
+  var edgeInsets:UIEdgeInsets = UIEdgeInsets(top: 2, left: 7.5, bottom: 2, right: 7.5)
 
   override init() {
     super.init()
@@ -28,10 +29,38 @@ class SwiftBadge: UIView {
   private func setup() {
     setTranslatesAutoresizingMaskIntoConstraints(false)
 
-    backgroundColor = UIColor.greenColor()
+    layer.backgroundColor = UIColor.redColor().CGColor
+    textColor = UIColor.whiteColor()
+
+    // Shadow
+    layer.shadowOpacity = 0.5
+    layer.shadowOffset = CGSize(width: 1, height: 1)
+    layer.shadowRadius = 0.5
+    layer.shadowColor = UIColor.blackColor().CGColor
   }
 
   override func intrinsicContentSize() -> CGSize {
-    return CGSize(width: 50, height: 30)
+    let size = super.intrinsicContentSize()
+
+    println("intrinsic size \(size)")
+    layer.cornerRadius = size.height / 2
+    return size
+  }
+
+  // Add custom insets
+  // --------------------
+  override func textRectForBounds(bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+    var rect = super.textRectForBounds(UIEdgeInsetsInsetRect(bounds, edgeInsets), limitedToNumberOfLines: numberOfLines)
+
+    rect.origin.x -= edgeInsets.left
+    rect.origin.y -= edgeInsets.top
+    rect.size.width  += (edgeInsets.left + edgeInsets.right);
+    rect.size.height += (edgeInsets.top + edgeInsets.bottom);
+
+    return rect
+  }
+
+  override func drawTextInRect(rect: CGRect) {
+    super.drawTextInRect(UIEdgeInsetsInsetRect(rect, edgeInsets))
   }
 }

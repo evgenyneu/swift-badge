@@ -10,19 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var valueStepper: UIStepper!
+
+  let defaultBadgeValue = 1.0
+  var badge: SwiftBadge?
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    valueStepper.value = defaultBadgeValue
     createBadge()
+
+    updatebadgeValue()
   }
 
   private func createBadge() {
-    let badge = SwiftBadge()
+    let newBadge = SwiftBadge()
 
-    view.addSubview(badge)
+    badge = newBadge
 
-    addCenterXConstraints(badge)
-    addCenterYConstraints(badge)
+    view.addSubview(newBadge)
+
+    addCenterXConstraints(newBadge)
+    addCenterYConstraints(newBadge)
   }
 
   private func addCenterXConstraints(chilView: UIView) {
@@ -45,5 +55,18 @@ class ViewController: UIViewController {
       constant:0))
   }
   
+  @IBAction func onStepperChanged(stepper: UIStepper) {
+    updatebadgeValue()
+  }
+
+  private func updatebadgeValue() {
+    if let currentBadge = badge {
+      currentBadge.text = formatBadgeValue(valueStepper.value)
+    }
+  }
+
+  private func formatBadgeValue(value: Double) -> String {
+    return NSString(format: "%.0f", value)
+  }
 }
 
