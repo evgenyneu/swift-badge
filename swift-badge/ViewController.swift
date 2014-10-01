@@ -34,11 +34,8 @@ class ViewController: UIViewController {
     let newBadge = SwiftBadge()
 
     newBadge.defaultInsets = CGSize(width: 12, height: 12)
-
     badge = newBadge
-
     newBadge.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
-
     view.addSubview(newBadge)
 
     addCenterXConstraints(newBadge)

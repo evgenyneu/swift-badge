@@ -44,8 +44,6 @@ class SwiftBadge: UILabel {
   override func textRectForBounds(bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
     let rect = super.textRectForBounds(bounds, limitedToNumberOfLines: numberOfLines)
 
-    println("textRectForBounds bounds \(bounds) rect \(rect.size)")
-
     actualInsets = defaultInsets
     var rectWithDefaultInsets = CGRectInset(rect, -actualInsets.width, -actualInsets.height)
 
@@ -58,7 +56,6 @@ class SwiftBadge: UILabel {
     return CGRectInset(rect, -actualInsets.width, -actualInsets.height)
   }
 
-  // Draw text in the rect without insets
   override func drawTextInRect(rect: CGRect) {
 
     layer.cornerRadius = rect.height / 2
