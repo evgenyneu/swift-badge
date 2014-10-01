@@ -8,7 +8,17 @@ The view is a subclass of UILabel view.
 ## Usage
 
 Copy `SwiftBadge.swift` to your project. A badge can be created and positioned similar to any UIView.
-One can use autolayout for positioning and dynamic type fonts.
+
+### Creating a badge in storyboard
+
+* Drag a **Label** to your view a UILabel.
+* Set its `class` to `SwiftBadge` in identity inspector
+* Add auto layout constraints to position the badge. There is no need to set the size constrtaints, it will be determined dynamically based on badge text. You can see how it is done in this demo app
+
+<img src='https://raw.githubusercontent.com/exchangegroup/swift-badge/master/graphics/swift-badge-class.png' height='49' alt='Add badge to storyboard'>
+
+
+### Creating a badge from code
 
 ```
 let badge = SwiftBadge()
