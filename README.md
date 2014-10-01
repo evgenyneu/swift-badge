@@ -18,7 +18,7 @@ Copy `SwiftBadge.swift` to your project. A badge can be created and positioned s
 
 * Add auto layout constraints to position the badge.
 * Font can be set in the attribute inspector.
-* One needs to write code to customize colors and shadows (see below). 
+* Colors and shadow can only be customized in code (see below). 
 
 Note: 
 
