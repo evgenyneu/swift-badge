@@ -7,7 +7,7 @@ The view is a subclass of UILabel view.
 
 ## Usage
 
-Copy `[SwiftBadge.swift](https://github.com/exchangegroup/swift-badge/blob/master/swift-badge/SwiftBadge.swift)` to your project. A badge can be created and positioned similar to any UIView.
+Copy [SwiftBadge.swift](https://github.com/exchangegroup/swift-badge/blob/master/swift-badge/SwiftBadge.swift) to your project. A badge can be created and positioned similar to any UIView.
 
 Swift badge is written in Swift 2.0 for Xcode 7. To use it with Swift 1.2 get the (SwiftBadge.swift for Xcode 6)(https://github.com/exchangegroup/swift-badge/blob/swift-1.2/swift-badge/SwiftBadge.swift) or checkout the `swift-1.2` tag.
 
