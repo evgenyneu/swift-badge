@@ -12,14 +12,14 @@ class SwiftBadge: UILabel {
   var defaultInsets = CGSize(width: 2, height: 2)
   var actualInsets = CGSize()
   
-  override init() {
-    super.init()
-    
-    setup()
+  convenience init() {
+    self.init(frame: CGRect())
   }
   
   override init(frame: CGRect) {
     super.init(frame: frame)
+    
+    setup()
   }
   
   required init(coder aDecoder: NSCoder) {
@@ -29,7 +29,7 @@ class SwiftBadge: UILabel {
   }
   
   private func setup() {
-    setTranslatesAutoresizingMaskIntoConstraints(false)
+    translatesAutoresizingMaskIntoConstraints = false
     
     layer.backgroundColor = UIColor.redColor().CGColor
     textColor = UIColor.whiteColor()
@@ -47,7 +47,7 @@ class SwiftBadge: UILabel {
     let rect = super.textRectForBounds(bounds, limitedToNumberOfLines: numberOfLines)
     
     actualInsets = defaultInsets
-    var rectWithDefaultInsets = CGRectInset(rect, -actualInsets.width, -actualInsets.height)
+    let rectWithDefaultInsets = CGRectInset(rect, -actualInsets.width, -actualInsets.height)
     
     // If width is less than height
     // Adjust the width insets to make it look round

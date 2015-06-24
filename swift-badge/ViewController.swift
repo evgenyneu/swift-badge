@@ -41,13 +41,13 @@ class ViewController: UIViewController {
   }
 
   private func updateInsetValue() {
-    var inset = insetStepper.value
+    let inset = insetStepper.value
     badge.defaultInsets = CGSize(width: inset, height: inset)
     badge.invalidateIntrinsicContentSize()
   }
 
   private func formatBadgeValue(value: Double) -> String {
-    return NSString(format: "%.0f", value)
+    return NSString(format: "%.0f", value) as String
   }
 }
 
