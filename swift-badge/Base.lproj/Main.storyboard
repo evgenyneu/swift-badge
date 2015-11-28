@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,53 +17,115 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7b7-ic-y1K">
-                                <rect key="frame" x="253" y="539" width="94" height="29"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m1t-4r-PiC">
+                                <rect key="frame" x="276" y="389" width="51" height="31"/>
+                                <animations/>
                                 <connections>
-                                    <action selector="onStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="1ZR-Zt-PJq"/>
+                                    <action selector="shadowSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="gzb-4g-iuE"/>
                                 </connections>
-                            </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ev-tM-KVo">
-                                <rect key="frame" x="183" y="543" width="62" height="21"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shadow" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsN-CH-7Jv">
+                                <rect key="frame" x="183.5" y="394.5" width="61.5" height="20.5"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ini-LD-qC8">
-                                <rect key="frame" x="253" y="502" width="94" height="29"/>
+                                <rect key="frame" x="253" y="428" width="94" height="29"/>
+                                <animations/>
                                 <connections>
                                     <action selector="onInsetStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="efh-ey-Edq"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inset" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13T-St-T7J">
-                                <rect key="frame" x="207" y="506" width="38" height="21"/>
+                                <rect key="frame" x="207" y="432.5" width="37.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7b7-ic-y1K">
+                                <rect key="frame" x="253" y="465" width="94" height="29"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="onStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="1ZR-Zt-PJq"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ev-tM-KVo">
+                                <rect key="frame" x="183" y="469.5" width="62" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Tuj-CL-kRy" userLabel="Font Stepper">
+                                <rect key="frame" x="253" y="502" width="94" height="29"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="onFontSizeStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8yl-pF-UW0"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDL-HW-bt1">
+                                <rect key="frame" x="210.5" y="506.5" width="34.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="USk-FX-Xbv" userLabel="Border Stepper">
+                                <rect key="frame" x="253" y="539" width="94" height="29"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="onBorderWidthStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="3Ay-WF-lnk"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Border" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUl-nP-iGZ">
+                                <rect key="frame" x="193" y="543.5" width="52" height="20.5"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alJ-1t-bdH" customClass="SwiftBadge" customModule="swift_badge" customModuleProvider="target">
-                                <rect key="frame" x="295" y="289" width="10" height="21"/>
+                                <rect key="frame" x="295" y="289.5" width="10.5" height="20.5"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="m1t-4r-PiC" firstAttribute="centerY" secondItem="zsN-CH-7Jv" secondAttribute="centerY" id="00k-BB-F5h"/>
                             <constraint firstItem="7b7-ic-y1K" firstAttribute="leading" secondItem="9ev-tM-KVo" secondAttribute="trailing" constant="8" id="38o-Cz-l5b"/>
+                            <constraint firstItem="Tuj-CL-kRy" firstAttribute="leading" secondItem="WDL-HW-bt1" secondAttribute="trailing" constant="8" id="3Vv-2W-fAP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="USk-FX-Xbv" secondAttribute="bottom" constant="32" id="9W8-At-rIq"/>
                             <constraint firstItem="7b7-ic-y1K" firstAttribute="top" secondItem="ini-LD-qC8" secondAttribute="bottom" constant="8" id="JrQ-rW-4V1"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7b7-ic-y1K" secondAttribute="bottom" constant="32" id="LZp-oC-UH9"/>
+                            <constraint firstItem="ini-LD-qC8" firstAttribute="top" secondItem="m1t-4r-PiC" secondAttribute="bottom" constant="8" id="OQN-aF-G2v"/>
+                            <constraint firstItem="USk-FX-Xbv" firstAttribute="centerY" secondItem="BUl-nP-iGZ" secondAttribute="centerY" id="TOf-9l-pmt"/>
+                            <constraint firstItem="m1t-4r-PiC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Trv-kj-n0C"/>
                             <constraint firstItem="ini-LD-qC8" firstAttribute="leading" secondItem="13T-St-T7J" secondAttribute="trailing" constant="8" id="VCI-ct-8o2"/>
                             <constraint firstItem="ini-LD-qC8" firstAttribute="centerY" secondItem="13T-St-T7J" secondAttribute="centerY" id="VEN-La-Q9V"/>
                             <constraint firstAttribute="centerY" secondItem="alJ-1t-bdH" secondAttribute="centerY" constant="0.5" id="Yvh-NQ-EKl"/>
                             <constraint firstItem="7b7-ic-y1K" firstAttribute="centerY" secondItem="9ev-tM-KVo" secondAttribute="centerY" id="Yw3-GT-Q9g"/>
                             <constraint firstItem="7b7-ic-y1K" firstAttribute="leading" secondItem="ini-LD-qC8" secondAttribute="leading" id="aA8-ua-WrM"/>
+                            <constraint firstItem="Tuj-CL-kRy" firstAttribute="centerY" secondItem="WDL-HW-bt1" secondAttribute="centerY" id="dPh-Vt-9tp"/>
+                            <constraint firstItem="USk-FX-Xbv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dXh-IR-ylB"/>
+                            <constraint firstItem="USk-FX-Xbv" firstAttribute="top" secondItem="Tuj-CL-kRy" secondAttribute="bottom" constant="8" id="g7q-eK-HS5"/>
+                            <constraint firstItem="Tuj-CL-kRy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hjv-w9-kL3"/>
+                            <constraint firstItem="Tuj-CL-kRy" firstAttribute="top" secondItem="7b7-ic-y1K" secondAttribute="bottom" constant="8" id="jBP-ww-WKC"/>
                             <constraint firstAttribute="centerX" secondItem="alJ-1t-bdH" secondAttribute="centerX" id="loL-Iw-QO5"/>
                             <constraint firstAttribute="centerX" secondItem="7b7-ic-y1K" secondAttribute="centerX" id="mQm-dp-txT"/>
+                            <constraint firstItem="USk-FX-Xbv" firstAttribute="leading" secondItem="BUl-nP-iGZ" secondAttribute="trailing" constant="8" id="mfm-pl-NZT"/>
+                            <constraint firstItem="13T-St-T7J" firstAttribute="trailing" secondItem="zsN-CH-7Jv" secondAttribute="trailing" id="unf-7q-io5"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="badge" destination="alJ-1t-bdH" id="L9m-6M-KBG"/>
+                        <outlet property="borderWidthStepper" destination="USk-FX-Xbv" id="QKB-3c-Vdm"/>
+                        <outlet property="fontSizeStepper" destination="Tuj-CL-kRy" id="ZmD-pg-Ylv"/>
                         <outlet property="insetStepper" destination="ini-LD-qC8" id="zSD-95-ij6"/>
                         <outlet property="valueStepper" destination="7b7-ic-y1K" id="gQF-wH-Bno"/>
                     </connections>
