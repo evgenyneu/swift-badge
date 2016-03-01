@@ -119,6 +119,7 @@ class SwiftBadge: UILabel {
     translatesAutoresizingMaskIntoConstraints = false
     
     textColor = UIColor.whiteColor()
+    textAlignment = NSTextAlignment.Center
     
     // Shadow
     layer.shadowOpacity = 0.5
