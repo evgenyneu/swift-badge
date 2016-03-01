@@ -3,8 +3,8 @@
 This is a badge view for iOS 7+ written in Swift. The style is similar to the springboard badges in iOS 7 or 8.
 The view is a subclass of UILabel view.
 
-<img src='https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift-badge.png' height='49' alt='Swift Badge'>
-<img src='https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift-badge-with-border.png' height='49' alt='Swift Badge with border'>
+<img src='graphics/swift-badge.png' height='49' alt='Swift Badge'>
+<img src='graphics/swift-badge-with-border.png' height='49' alt='Swift Badge with border'>
 
 ## Usage
 
