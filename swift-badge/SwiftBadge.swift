@@ -23,21 +23,11 @@ Project home: https://github.com/marketplacer/swift-badge
   }
   
   /// Background color of the badge
-  override var backgroundColor: UIColor? {
-    get { return fillColor }
-    set {
-      if let color = newValue {
-        fillColor = color
-      } else {
-        fillColor = UIColor.clearColor()
-      }
-      
+  @IBInspectable  var badgeColor: UIColor = UIColor.redColor() {
+    didSet {
       setNeedsDisplay()
     }
   }
-  
-  /// Use backgroudColor instead, this is for internal use.
-  private var fillColor: UIColor = UIColor.redColor()
   
   /// Badge insets that describe the margin between text and the edge of the badge.
   @IBInspectable var insets: CGSize = CGSize(width: 2, height: 2) {
@@ -134,7 +124,7 @@ Project home: https://github.com/marketplacer/swift-badge
     let rectInset = CGRectInset(rect, borderWidth/2, borderWidth/2)
     let path = UIBezierPath(roundedRect: rectInset, cornerRadius: rect.height/2)
     
-    fillColor.setFill()
+    badgeColor.setFill()
     path.fill()
     
     if borderWidth > 0 {

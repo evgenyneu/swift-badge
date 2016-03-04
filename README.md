@@ -46,8 +46,8 @@ badge.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
 // Text color
 badge.textColor = UIColor.yellowColor()
 
-// Background color
-badge.backgroundColor = UIColor.blackColor()
+// Badge color
+badge.badgeColor = UIColor.blackColor()
 
 // Shadow
 badge.shadowOpacityBadge = 0.5
