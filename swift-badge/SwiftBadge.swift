@@ -6,7 +6,7 @@ Badge view control.
 Project home: https://github.com/marketplacer/swift-badge
  
 */
-class SwiftBadge: UILabel {
+@IBDesignable class SwiftBadge: UILabel {
   
   lazy var borderColor: UIColor = UIColor.whiteColor()
   private var fillColor: UIColor = UIColor.redColor()
@@ -114,7 +114,7 @@ class SwiftBadge: UILabel {
   private func setup() {
     translatesAutoresizingMaskIntoConstraints = false
     
-    textColor = UIColor.whiteColor()
+    //textColor = UIColor.whiteColor()
     textAlignment = NSTextAlignment.Center
     
     // Shadow
@@ -127,5 +127,21 @@ class SwiftBadge: UILabel {
   private func actualInsetsWithBorder() -> CGSize {
     return CGSize(width: actualInsets.width+borderWidth, height: actualInsets.height+borderWidth)
   }
+  
+  /// Draw the stars in interface buidler
+  @available(iOS 8.0, *)
+  override func prepareForInterfaceBuilder() {
+    super.prepareForInterfaceBuilder()
+    
+    setup()
+    setNeedsDisplay()
+  }
+  
+//  /// Draws the stars when the view comes out of storyboard with default settings
+//  override func awakeFromNib() {
+//    super.awakeFromNib()
+//    
+//    setNeedsDisplay()
+//  }
   
 }
