@@ -65,6 +65,13 @@ badge.borderWidth = 5.0
 badge.borderColor = UIColor.magentaColor()
 ```
 
+## Demo app
+
+This project includes a demo app.
+
+<img src='https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift_badge_demo_app.png' width='414' alt='Swift badge demo app'>
+
+
 ## Alternative
 
 There is a great alternative badge created by Sascha Paulus in Objective-C.
