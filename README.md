@@ -70,3 +70,7 @@ badge.borderColor = UIColor.magentaColor()
 There is a great alternative badge created by Sascha Paulus in Objective-C.
 
 https://github.com/ckteebe/CustomBadge
+
+## Contributors
+
+* Thanks to [amg1976](https://github.com/amg1976) for adding a border to the badge.
