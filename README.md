@@ -1,14 +1,14 @@
 # Overview
 
 This is a badge view for iOS 7+ written in Swift. The style is similar to the springboard badges in iOS 7 or 8.
-The view is a subclass of UILabel view.
+The badge is a subclass of UILabel view and can be customized directly from the Storyboard.
 
 <img src='graphics/swift-badge.png' height='49' alt='Swift Badge'>
 <img src='graphics/swift-badge-with-border.png' height='49' alt='Swift Badge with border'>
 
 ## Usage
 
-Copy [SwiftBadge.swift](https://github.com/marketplacer/swift-badge/blob/master/swift-badge/SwiftBadge.swift) to your project. A badge can be created and positioned similar to any UIView.
+Copy [SwiftBadge.swift](https://github.com/marketplacer/swift-badge/blob/master/swift-badge/SwiftBadge.swift) to your project.
 
 Swift badge is written in Swift 2.0 for Xcode 7. To use it with Swift 1.2 get the [SwiftBadge.swift for Xcode 6](https://github.com/marketplacer/swift-badge/blob/swift-1.2/swift-badge/SwiftBadge.swift) or checkout the `swift-1.2` tag.
 
