@@ -36,7 +36,7 @@ view.addSubview(badge)
 
 [See example](https://github.com/marketplacer/swift-badge/blob/master/swift-badge/CreateBadgeFromCodeViewController.swift) of how to create and position the badge from code in the demo app.
 
-## Customization
+#### Customization
 
 ```Swift
 // Text
