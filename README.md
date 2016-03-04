@@ -16,7 +16,7 @@ Copy [SwiftBadge.swift](https://github.com/marketplacer/swift-badge/blob/master/
 * Drag a **Label** to your view.
 * Set its `class` to `SwiftBadge` in identity inspector.
 
-<img src='https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift_badge_class_name.png' width='258' alt='Add badge to storyboard'>
+<img src='https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift_badge_class_name_2.png' width='258' alt='Add badge to storyboard'>
 
 * Set the badge properties in the attributes inspector.
 
