@@ -10,8 +10,6 @@ The badge is a subclass of UILabel view and can be customized from the Storyboar
 
 Copy [SwiftBadge.swift](https://github.com/marketplacer/swift-badge/blob/master/swift-badge/SwiftBadge.swift) to your project.
 
-Swift badge is written in Swift 2.0 for Xcode 7. To use it with Swift 1.2 get the [SwiftBadge.swift for Xcode 6](https://github.com/marketplacer/swift-badge/blob/swift-1.2/swift-badge/SwiftBadge.swift) or checkout the `swift-1.2` tag.
-
 
 ### Creating a badge in Storyboard
 
