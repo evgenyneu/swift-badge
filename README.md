@@ -1,3 +1,6 @@
+<img src='graphics/swift-badge.png' height='45' alt='Swift Badge'>
+<img src='graphics/swift-badge-with-border.png' height='49' alt='Swift Badge with border'>
+
 # Badge control for iOS written in Swift
 
 This is a badge view for iOS 7+ written in Swift.
@@ -6,9 +9,6 @@ This is a badge view for iOS 7+ written in Swift.
 * The badge is a subclass of UILabel view.
 * It can be created and customized from the Storyboard or programatically.
 
-
-<img src='graphics/swift-badge.png' height='49' alt='Swift Badge'>
-<img src='graphics/swift-badge-with-border.png' height='49' alt='Swift Badge with border'>
 
 ## Usage
 
