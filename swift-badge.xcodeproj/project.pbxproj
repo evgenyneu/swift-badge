@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2B6D02FD19DB720D000C1A07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D02FC19DB720D000C1A07 /* AppDelegate.swift */; };
-		2B6D02FF19DB720D000C1A07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D02FE19DB720D000C1A07 /* ViewController.swift */; };
 		2B6D030219DB720D000C1A07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6D030019DB720D000C1A07 /* Main.storyboard */; };
 		2B6D030419DB720D000C1A07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B6D030319DB720D000C1A07 /* Images.xcassets */; };
 		2B6D030719DB720D000C1A07 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6D030519DB720D000C1A07 /* LaunchScreen.xib */; };
 		2B6D031319DB720D000C1A07 /* swift_badgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D031219DB720D000C1A07 /* swift_badgeTests.swift */; };
 		2B6D031D19DB7221000C1A07 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B6D031C19DB7221000C1A07 /* Default-568h@2x.png */; };
 		2B6D031F19DB725C000C1A07 /* SwiftBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D031E19DB725C000C1A07 /* SwiftBadge.swift */; };
-		7E4EF2341C89777600BA1C59 /* CreateBadgeFromCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4EF2331C89777600BA1C59 /* CreateBadgeFromCodeViewController.swift */; };
+		7E79E6E21C89869C00D88D55 /* CreateBadgeFromCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E79E6E01C89869C00D88D55 /* CreateBadgeFromCodeViewController.swift */; };
+		7E79E6E31C89869C00D88D55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E79E6E11C89869C00D88D55 /* ViewController.swift */; };
+		7E79E6E51C8986AA00D88D55 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E79E6E41C8986AA00D88D55 /* TableViewController.swift */; };
+		7E79E6E71C89875C00D88D55 /* BadgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E79E6E61C89875C00D88D55 /* BadgeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,6 @@
 		2B6D02F719DB720D000C1A07 /* swift-badge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-badge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6D02FB19DB720D000C1A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B6D02FC19DB720D000C1A07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B6D02FE19DB720D000C1A07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B6D030119DB720D000C1A07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B6D030319DB720D000C1A07 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2B6D030619DB720D000C1A07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -41,7 +42,10 @@
 		2B6D031219DB720D000C1A07 /* swift_badgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_badgeTests.swift; sourceTree = "<group>"; };
 		2B6D031C19DB7221000C1A07 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2B6D031E19DB725C000C1A07 /* SwiftBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftBadge.swift; sourceTree = "<group>"; };
-		7E4EF2331C89777600BA1C59 /* CreateBadgeFromCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateBadgeFromCodeViewController.swift; sourceTree = "<group>"; };
+		7E79E6E01C89869C00D88D55 /* CreateBadgeFromCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateBadgeFromCodeViewController.swift; sourceTree = "<group>"; };
+		7E79E6E11C89869C00D88D55 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E79E6E41C8986AA00D88D55 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7E79E6E61C89875C00D88D55 /* BadgeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,14 +88,14 @@
 		2B6D02F919DB720D000C1A07 /* swift-badge */ = {
 			isa = PBXGroup;
 			children = (
+				7E79E6DF1C89868000D88D55 /* ViewControllers */,
 				2B6D031E19DB725C000C1A07 /* SwiftBadge.swift */,
 				2B6D02FC19DB720D000C1A07 /* AppDelegate.swift */,
-				7E4EF2331C89777600BA1C59 /* CreateBadgeFromCodeViewController.swift */,
-				2B6D02FE19DB720D000C1A07 /* ViewController.swift */,
 				2B6D030019DB720D000C1A07 /* Main.storyboard */,
 				2B6D030319DB720D000C1A07 /* Images.xcassets */,
 				2B6D030519DB720D000C1A07 /* LaunchScreen.xib */,
 				2B6D02FA19DB720D000C1A07 /* Supporting Files */,
+				7E79E6E61C89875C00D88D55 /* BadgeTableViewCell.swift */,
 			);
 			path = "swift-badge";
 			sourceTree = "<group>";
@@ -119,6 +123,16 @@
 				2B6D031119DB720D000C1A07 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E79E6DF1C89868000D88D55 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E79E6E01C89869C00D88D55 /* CreateBadgeFromCodeViewController.swift */,
+				7E79E6E11C89869C00D88D55 /* ViewController.swift */,
+				7E79E6E41C8986AA00D88D55 /* TableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,10 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B6D02FF19DB720D000C1A07 /* ViewController.swift in Sources */,
 				2B6D02FD19DB720D000C1A07 /* AppDelegate.swift in Sources */,
+				7E79E6E71C89875C00D88D55 /* BadgeTableViewCell.swift in Sources */,
 				2B6D031F19DB725C000C1A07 /* SwiftBadge.swift in Sources */,
-				7E4EF2341C89777600BA1C59 /* CreateBadgeFromCodeViewController.swift in Sources */,
+				7E79E6E31C89869C00D88D55 /* ViewController.swift in Sources */,
+				7E79E6E51C8986AA00D88D55 /* TableViewController.swift in Sources */,
+				7E79E6E21C89869C00D88D55 /* CreateBadgeFromCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
