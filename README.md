@@ -72,12 +72,25 @@ This project includes a demo app.
 <img src='graphics/demo_app/swift_badge_ios_in_table_view.png' width='320' alt='Show Swift badge in a table view in iOS'>
 <img src='graphics/demo_app/swift_badge_create_from_code.png' width='320' alt='Create badge from code Swift badge for iOS'>
 
-## Alternative
+## Alternative solutions
 
-There is a great alternative badge created by Sascha Paulus in Objective-C.
+Here are some alternative badges for iOS.
 
-https://github.com/ckteebe/CustomBadge
+* [ckteebe/CustomBadge](https://github.com/ckteebe/CustomBadge)
+* [JaviSoto/JSBadgeView](https://github.com/JaviSoto/JSBadgeView)
+* [mikeMTOL/UIBarButtonItem-Badge](https://github.com/mikeMTOL/UIBarButtonItem-Badge)
+* [mustafaibrahim989/MIBadgeButton-Swift](https://github.com/mustafaibrahim989/MIBadgeButton-Swift)
+* [soffes/SAMBadgeView](https://github.com/soffes/SAMBadgeView)
+* [tmdvs/TDBadgedCell](https://github.com/tmdvs/TDBadgedCell)
 
 ## Contributors
 
 * Thanks to [amg1976](https://github.com/amg1976) for adding a border to the badge.
+
+## License
+
+Auk is released under the [MIT License](LICENSE).
+
+## Feedback is welcome
+
+If you want to extend or improve the badge feel free to create an issue.
