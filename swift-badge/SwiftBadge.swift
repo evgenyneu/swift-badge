@@ -30,7 +30,7 @@ class SwiftBadge: UILabel {
     self.init(frame: CGRect())
   }
 
-  //MARK: UILabel
+  // MARK: UILabel
   
   override var backgroundColor: UIColor? {
     get { return fillColor }
@@ -56,7 +56,6 @@ class SwiftBadge: UILabel {
   }
   
   // Add custom insets
-  // --------------------
   override func textRectForBounds(bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
     let rect = super.textRectForBounds(bounds, limitedToNumberOfLines: numberOfLines)
 
@@ -110,7 +109,7 @@ class SwiftBadge: UILabel {
     super.drawRect(rect)
   }
   
-  //MARK: private
+  // MARK: private
   
   private var fillColor: UIColor = UIColor.redColor()
   private var actualInsets: CGSize = CGSize()
