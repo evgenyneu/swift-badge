@@ -68,8 +68,11 @@ badge.borderColor = UIColor.magentaColor()
 
 This project includes a demo app.
 
-<img src='graphics/swift_badge_demo_app.png' width='414' alt='Swift badge demo app'>
+<img src='graphics/demo_app/swift_badge_ios_demo_app.png' width='320' alt='Swift badge for iOS demo app'>
 
+<img src='graphics/demo_app/swift_badge_ios_in_table_view.png' width='320' alt='Show Swift badge in a table view in iOS'>
+
+<img src='graphics/demo_app/swift_badge_create_from_code.png' width='320' alt='Create badge from code Swift badge for iOS'>
 
 ## Alternative
 
