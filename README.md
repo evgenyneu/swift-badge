@@ -2,12 +2,9 @@
 
 # Badge control for iOS written in Swift
 
-This is a badge view for iOS 7+ written in Swift.
-
-* The badge style is similar to the home screen badges in iOS.
 * The badge is a subclass of UILabel view.
 * It can be created and customized from the Storyboard or programatically.
-
+* Supports iOS 7+.
 
 ## Usage
 
