@@ -93,4 +93,4 @@ Auk is released under the [MIT License](LICENSE).
 
 ## Feedback is welcome
 
-If you want to extend or improve the badge feel free to create an issue.
+If you found a bug or want to improve the badge feel free to create an issue.
