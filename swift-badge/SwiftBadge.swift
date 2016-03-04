@@ -1,14 +1,16 @@
-//
-//  SwiftBadge.swift
-//  swift-badge
-//
-//  Created by Evgenii Neumerzhitckii on 1/10/2014.
-//  Copyright (c) 2014 The Exchange Group Pty Ltd. All rights reserved.
-//
-
 import UIKit
 
+/**
+ 
+Badge view control.
+Project home: https://github.com/marketplacer/swift-badge
+ 
+*/
 class SwiftBadge: UILabel {
+  
+  lazy var borderColor: UIColor = UIColor.whiteColor()
+  private var fillColor: UIColor = UIColor.redColor()
+  private var actualInsets: CGSize = CGSize()
   
   var defaultInsets = CGSize(width: 2, height: 2) {
     didSet {
@@ -23,8 +25,6 @@ class SwiftBadge: UILabel {
       setNeedsDisplay()
     }
   }
-  
-  lazy var borderColor: UIColor = UIColor.whiteColor()
   
   convenience init() {
     self.init(frame: CGRect())
@@ -111,9 +111,6 @@ class SwiftBadge: UILabel {
   
   // MARK: private
   
-  private var fillColor: UIColor = UIColor.redColor()
-  private var actualInsets: CGSize = CGSize()
-
   private func setup() {
     translatesAutoresizingMaskIntoConstraints = false
     

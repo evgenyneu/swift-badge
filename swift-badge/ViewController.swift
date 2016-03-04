@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  swift-badge
-//
-//  Created by Evgenii Neumerzhitckii on 1/10/2014.
-//  Copyright (c) 2014 The Exchange Group Pty Ltd. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -16,9 +8,9 @@ class ViewController: UIViewController {
   @IBOutlet weak var fontSizeStepper: UIStepper!
   @IBOutlet weak var borderWidthStepper: UIStepper!
 
-  let defaultBadgeValue = 100.0
-  let defaultInsetValue = 2.0
-  let defaultFontSize = 50.0
+  let defaultBadgeValue = 10.0
+  let defaultInsetValue = 5.0
+  let defaultFontSize = 20.0
   let defaultBorderWidth = 0.0
 
   override func viewDidLoad() {
@@ -33,7 +25,6 @@ class ViewController: UIViewController {
     updateInsetValue()
     updateFontSizeValue()
     updateBorderWidthValue()
-    
   }
 
   @IBAction func shadowSwitch(sender: UISwitch) {

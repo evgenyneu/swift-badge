@@ -42,7 +42,7 @@ view.addSubview(badge)
 
 ```
 // text
-badge.text = '2'
+badge.text = "2"
 
 // insets
 badge.defaultInsets = CGSize(width: 12, height: 12)
