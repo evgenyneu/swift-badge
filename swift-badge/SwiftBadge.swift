@@ -8,18 +8,17 @@ Project home: https://github.com/marketplacer/swift-badge
 */
 @IBDesignable class SwiftBadge: UILabel {
   
-  lazy var borderColor: UIColor = UIColor.whiteColor()
+  @IBInspectable  lazy var borderColor: UIColor = UIColor.whiteColor()
   private var fillColor: UIColor = UIColor.redColor()
-  private var actualInsets: CGSize = CGSize()
   
-  var defaultInsets = CGSize(width: 2, height: 2) {
+  /// Badge insets that describe the margin between text and the edge of the badge.
+  @IBInspectable var insets: CGSize = CGSize(width: 2, height: 2) {
     didSet {
-      actualInsets = defaultInsets
       invalidateIntrinsicContentSize()
     }
   }
   
-  var borderWidth: CGFloat = 0 {
+  @IBInspectable var borderWidth: CGFloat = 0 {
     didSet {
       invalidateIntrinsicContentSize()
       setNeedsDisplay()
@@ -109,8 +108,6 @@ Project home: https://github.com/marketplacer/swift-badge
     super.drawRect(rect)
   }
   
-  // MARK: private
-  
   private func setup() {
     translatesAutoresizingMaskIntoConstraints = false
     
@@ -124,8 +121,12 @@ Project home: https://github.com/marketplacer/swift-badge
     layer.shadowColor = UIColor.blackColor().CGColor
   }
   
+  /// Size of the insets plus the border
   private func actualInsetsWithBorder() -> CGSize {
-    return CGSize(width: actualInsets.width+borderWidth, height: actualInsets.height+borderWidth)
+    return CGSize(
+      width: insets.width + borderWidth,
+      height: insets.height + borderWidth
+    )
   }
   
   /// Draw the stars in interface buidler

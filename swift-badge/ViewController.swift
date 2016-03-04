@@ -4,12 +4,12 @@ class ViewController: UIViewController {
   @IBOutlet weak var badge: SwiftBadge!
   
   @IBOutlet weak var valueStepper: UIStepper!
-  @IBOutlet weak var insetStepper: UIStepper!
+  @IBOutlet weak var insetWidthStepper: UIStepper!
+  @IBOutlet weak var insetHeightStepper: UIStepper!
   @IBOutlet weak var fontSizeStepper: UIStepper!
   @IBOutlet weak var borderWidthStepper: UIStepper!
 
   let defaultBadgeValue = 10.0
-  let defaultInsetValue = 5.0
   let defaultFontSize = 20.0
   let defaultBorderWidth = 0.0
 
@@ -17,7 +17,8 @@ class ViewController: UIViewController {
     super.viewDidLoad()
 
     valueStepper.value = defaultBadgeValue
-    insetStepper.value = defaultInsetValue
+    insetWidthStepper.value = Double(badge.insets.width)
+    insetHeightStepper.value = Double(badge.insets.height)
     fontSizeStepper.value = defaultFontSize
     borderWidthStepper.value = defaultBorderWidth
 
@@ -44,8 +45,9 @@ class ViewController: UIViewController {
   }
 
   private func updateInsetValue() {
-    let inset = insetStepper.value
-    badge.defaultInsets = CGSize(width: inset, height: inset)
+    badge.insets = CGSize(
+      width: insetWidthStepper.value,
+      height: insetHeightStepper.value)
   }
 
   @IBAction func onFontSizeStepperChanged(sender: AnyObject) {
