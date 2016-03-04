@@ -16,11 +16,11 @@ Copy [SwiftBadge.swift](https://github.com/marketplacer/swift-badge/blob/master/
 * Drag a **Label** to your view.
 * Set its `class` to `SwiftBadge` in identity inspector.
 
-<img src='https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift_badge_class_name_2.png' width='258' alt='Add badge to storyboard'>
+<img src='graphics/swift_badge_class_name_2.png' width='258' alt='Add badge to storyboard'>
 
 * Set the badge properties in the attributes inspector.
 
-<img src='https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift_badge_attributes_inspector_2.png' width='374' alt='Change badge properties in attribute inspector'>
+<img src='graphics/swift_badge_attributes_inspector_2.png' width='374' alt='Change badge properties in attribute inspector'>
 
 
 ### Creating a badge from code
@@ -68,7 +68,7 @@ badge.borderColor = UIColor.magentaColor()
 
 This project includes a demo app.
 
-<img src='https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift_badge_demo_app.png' width='414' alt='Swift badge demo app'>
+<img src='graphics/swift_badge_demo_app.png' width='414' alt='Swift badge demo app'>
 
 
 ## Alternative
