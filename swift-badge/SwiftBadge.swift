@@ -149,7 +149,7 @@ Project home: https://github.com/marketplacer/swift-badge
     )
   }
   
-  /// Draw the stars in interface buidler
+  /// Draw the stars in interface builder
   @available(iOS 8.0, *)
   override func prepareForInterfaceBuilder() {
     super.prepareForInterfaceBuilder()
