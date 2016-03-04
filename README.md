@@ -18,7 +18,6 @@ Copy [SwiftBadge.swift](https://github.com/marketplacer/swift-badge/blob/master/
 
 <img src='https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift-badge-class.png' alt='Add badge to storyboard'>
 
-* Add auto layout constraints to position the badge.
 * Set the badge properties in the attributes inspector.
 
 <img src='https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift_badge_attributes_inspector.png' width='376' alt='Change badge properties in attribute inspector'>
