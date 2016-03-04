@@ -28,14 +28,14 @@ Swift badge is written in Swift 2.0 for Xcode 7. To use it with Swift 1.2 get th
 
 ### Creating a badge from code
 
-```
+```Swift
 let badge = SwiftBadge()
 view.addSubview(badge)
 ```
 
 ## Customization
 
-```
+```Swift
 // Text
 badge.text = "2"
 
