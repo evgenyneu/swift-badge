@@ -85,7 +85,7 @@ Here are some alternative badges for iOS.
 
 ## Contributors
 
-* Thanks to [amg1976](https://github.com/amg1976) for adding a border to the badge.
+* Thanks to [amg1976](https://github.com/amg1976) for adding a border to the badge and redesigning the drawing.
 
 ## License
 
