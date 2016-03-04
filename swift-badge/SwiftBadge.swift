@@ -2,7 +2,7 @@ import UIKit
 
 /**
  
-Badge view control similar to badge used on iOS home screen.
+Badge view control for iOS.
 Project home: https://github.com/marketplacer/swift-badge
  
 */
