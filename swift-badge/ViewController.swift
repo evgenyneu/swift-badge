@@ -10,7 +10,6 @@ class ViewController: UIViewController {
   @IBOutlet weak var borderWidthStepper: UIStepper!
 
   let defaultBadgeValue = 10.0
-  let defaultFontSize = 20.0
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -18,7 +17,7 @@ class ViewController: UIViewController {
     valueStepper.value = defaultBadgeValue
     insetWidthStepper.value = Double(badge.insets.width)
     insetHeightStepper.value = Double(badge.insets.height)
-    fontSizeStepper.value = defaultFontSize
+    fontSizeStepper.value = Double(badge.font.pointSize)
     borderWidthStepper.value = Double(badge.borderWidth)
 
     updatebadgeValue()

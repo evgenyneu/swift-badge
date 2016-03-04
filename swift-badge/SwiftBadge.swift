@@ -33,6 +33,7 @@ Project home: https://github.com/marketplacer/swift-badge
       } else {
         fillColor = UIColor.clearColor()
       }
+      setNeedsDisplay()
     }
   }
   
@@ -43,6 +44,45 @@ Project home: https://github.com/marketplacer/swift-badge
   @IBInspectable var insets: CGSize = CGSize(width: 2, height: 2) {
     didSet {
       invalidateIntrinsicContentSize()
+      setNeedsDisplay()
+    }
+  }
+  
+  // MARK: Badge shadow
+  
+  /// Opacity of the badge shadow
+  @IBInspectable var shadowOpacityBadge: CGFloat = 0.5 {
+    didSet {
+      layer.shadowOpacity = Float(shadowOpacityBadge)
+      invalidateIntrinsicContentSize()
+      setNeedsDisplay()
+    }
+  }
+  
+  /// Size of the badge shadow
+  @IBInspectable var shadowRadiusBadge: CGFloat = 0.5 {
+    didSet {
+      layer.shadowRadius = shadowRadiusBadge
+      invalidateIntrinsicContentSize()
+      setNeedsDisplay()
+    }
+  }
+  
+  /// Color of the badge shadow
+  @IBInspectable var shadowColorBadge: UIColor = UIColor.blackColor() {
+    didSet {
+      layer.shadowColor = shadowColorBadge.CGColor
+      invalidateIntrinsicContentSize()
+      setNeedsDisplay()
+    }
+  }
+  
+  /// Offset of the badge shadow
+  @IBInspectable var shadowOffsetBadge: CGSize = CGSize(width: 0, height: 0) {
+    didSet {
+      layer.shadowOffset = shadowOffsetBadge
+      invalidateIntrinsicContentSize()
+      setNeedsDisplay()
     }
   }
   
@@ -113,12 +153,7 @@ Project home: https://github.com/marketplacer/swift-badge
   
   private func setup() {
     textAlignment = NSTextAlignment.Center
-    
-    // Shadow
-    layer.shadowOpacity = 0.5
-    layer.shadowOffset = CGSize(width: 0, height: 0)
-    layer.shadowRadius = 0.5
-    layer.shadowColor = UIColor.blackColor().CGColor
+    clipsToBounds = false // Allows shadow to spread beyond the bounds of the badge
   }
   
   /// Size of the insets plus the border
@@ -137,12 +172,4 @@ Project home: https://github.com/marketplacer/swift-badge
     setup()
     setNeedsDisplay()
   }
-  
-  /// Draws the stars when the view comes out of storyboard with default settings
-  override func awakeFromNib() {
-    super.awakeFromNib()
-    
-    setNeedsDisplay()
-  }
-  
 }
