@@ -28,6 +28,7 @@ Copy [SwiftBadge.swift](https://github.com/marketplacer/swift-badge/blob/master/
 ```Swift
 let badge = SwiftBadge()
 view.addSubview(badge)
+// Position the badge ...
 ```
 
 [See example](swift-badge/ViewControllers/CreateBadgeFromCodeViewController.swift) of how to create and position the badge from code in the demo app.
