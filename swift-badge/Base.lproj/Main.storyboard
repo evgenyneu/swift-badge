@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -23,12 +24,6 @@
                                     <action selector="shadowSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="gzb-4g-iuE"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shadow" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsN-CH-7Jv">
-                                <rect key="frame" x="183" y="554" width="61.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inset height" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13T-St-T7J">
                                 <rect key="frame" x="155" y="421" width="90" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -53,8 +48,8 @@
                                     <action selector="onFontSizeStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8yl-pF-UW0"/>
                                 </connections>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDL-HW-bt1">
-                                <rect key="frame" x="210" y="465" width="34.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Font size" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDL-HW-bt1">
+                                <rect key="frame" x="175" y="465" width="69" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -65,21 +60,27 @@
                                     <action selector="onBorderWidthStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="3Ay-WF-lnk"/>
                                 </connections>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Border" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUl-nP-iGZ">
-                                <rect key="frame" x="193" y="509" width="52" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Border width" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUl-nP-iGZ">
+                                <rect key="frame" x="146" y="509" width="98.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alJ-1t-bdH" customClass="SwiftBadge" customModule="swift_badge" customModuleProvider="target">
-                                <rect key="frame" x="286" y="70" width="28" height="24.5"/>
-                                <color key="backgroundColor" red="1" green="0.50321524719999999" blue="0.054384547280000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="283" y="70" width="34" height="30.5"/>
+                                <color key="backgroundColor" red="0.95395596610994771" green="0.0" blue="0.12651881109480037" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="insets">
                                         <size key="value" width="5" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76987579616389368" green="0.89089087041884818" blue="0.82211818072208487" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -90,7 +91,7 @@
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inset width" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmB-Sp-4Is">
-                                <rect key="frame" x="161" y="377.5" width="84" height="20.5"/>
+                                <rect key="frame" x="161" y="377" width="84" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -101,6 +102,12 @@
                                     <action selector="onInsetStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Qgp-fn-XeQ"/>
                                 </connections>
                             </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show shadow" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsN-CH-7Jv">
+                                <rect key="frame" x="153.5" y="554.5" width="106.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -108,13 +115,14 @@
                             <constraint firstItem="7b7-ic-y1K" firstAttribute="leading" secondItem="9ev-tM-KVo" secondAttribute="trailing" constant="8" id="38o-Cz-l5b"/>
                             <constraint firstItem="Tuj-CL-kRy" firstAttribute="leading" secondItem="WDL-HW-bt1" secondAttribute="trailing" constant="8" id="3Vv-2W-fAP"/>
                             <constraint firstItem="Tuj-CL-kRy" firstAttribute="top" secondItem="ini-LD-qC8" secondAttribute="bottom" constant="15" id="3le-gg-HW9"/>
+                            <constraint firstItem="zsN-CH-7Jv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="7Pa-I3-TWg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m1t-4r-PiC" secondAttribute="bottom" constant="20" id="86I-GZ-wAj"/>
                             <constraint firstItem="m1t-4r-PiC" firstAttribute="top" secondItem="USk-FX-Xbv" secondAttribute="bottom" constant="15" id="Bvc-lB-zM8"/>
                             <constraint firstItem="XFh-2d-Iui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jej-eT-8sj"/>
                             <constraint firstItem="XFh-2d-Iui" firstAttribute="top" secondItem="7b7-ic-y1K" secondAttribute="bottom" constant="15" id="L1M-nS-D8p"/>
                             <constraint firstItem="alJ-1t-bdH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="MaV-66-LzP"/>
                             <constraint firstItem="USk-FX-Xbv" firstAttribute="centerY" secondItem="BUl-nP-iGZ" secondAttribute="centerY" id="TOf-9l-pmt"/>
-                            <constraint firstItem="m1t-4r-PiC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Trv-kj-n0C"/>
+                            <constraint firstItem="m1t-4r-PiC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" priority="250" id="Trv-kj-n0C"/>
                             <constraint firstItem="ini-LD-qC8" firstAttribute="leading" secondItem="13T-St-T7J" secondAttribute="trailing" constant="8" id="VCI-ct-8o2"/>
                             <constraint firstItem="ini-LD-qC8" firstAttribute="centerY" secondItem="13T-St-T7J" secondAttribute="centerY" id="VEN-La-Q9V"/>
                             <constraint firstAttribute="centerY" secondItem="alJ-1t-bdH" secondAttribute="centerY" constant="0.5" id="Yvh-NQ-EKl"/>
@@ -130,7 +138,7 @@
                             <constraint firstAttribute="centerX" secondItem="7b7-ic-y1K" secondAttribute="centerX" id="mQm-dp-txT"/>
                             <constraint firstItem="USk-FX-Xbv" firstAttribute="leading" secondItem="BUl-nP-iGZ" secondAttribute="trailing" constant="8" id="mfm-pl-NZT"/>
                             <constraint firstItem="ini-LD-qC8" firstAttribute="top" secondItem="XFh-2d-Iui" secondAttribute="bottom" constant="15" id="rMy-5h-0pV"/>
-                            <constraint firstItem="13T-St-T7J" firstAttribute="trailing" secondItem="zsN-CH-7Jv" secondAttribute="trailing" id="unf-7q-io5"/>
+                            <constraint firstItem="m1t-4r-PiC" firstAttribute="leading" secondItem="zsN-CH-7Jv" secondAttribute="trailing" constant="15" id="rlr-rY-ntR"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">

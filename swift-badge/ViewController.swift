@@ -11,7 +11,6 @@ class ViewController: UIViewController {
 
   let defaultBadgeValue = 10.0
   let defaultFontSize = 20.0
-  let defaultBorderWidth = 0.0
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -20,7 +19,7 @@ class ViewController: UIViewController {
     insetWidthStepper.value = Double(badge.insets.width)
     insetHeightStepper.value = Double(badge.insets.height)
     fontSizeStepper.value = defaultFontSize
-    borderWidthStepper.value = defaultBorderWidth
+    borderWidthStepper.value = Double(badge.borderWidth)
 
     updatebadgeValue()
     updateInsetValue()

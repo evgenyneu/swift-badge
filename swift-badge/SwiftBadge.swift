@@ -2,22 +2,13 @@ import UIKit
 
 /**
  
-Badge view control.
+Badge view control similar to badge used on iOS home screen.
 Project home: https://github.com/marketplacer/swift-badge
  
 */
 @IBDesignable class SwiftBadge: UILabel {
   
-  @IBInspectable  lazy var borderColor: UIColor = UIColor.whiteColor()
-  private var fillColor: UIColor = UIColor.redColor()
-  
-  /// Badge insets that describe the margin between text and the edge of the badge.
-  @IBInspectable var insets: CGSize = CGSize(width: 2, height: 2) {
-    didSet {
-      invalidateIntrinsicContentSize()
-    }
-  }
-  
+  /// Color of the bardge border
   @IBInspectable var borderWidth: CGFloat = 0 {
     didSet {
       invalidateIntrinsicContentSize()
@@ -25,12 +16,15 @@ Project home: https://github.com/marketplacer/swift-badge
     }
   }
   
-  convenience init() {
-    self.init(frame: CGRect())
+  /// Width of the badge border
+  @IBInspectable var borderColor: UIColor = UIColor.whiteColor() {
+    didSet {
+      invalidateIntrinsicContentSize()
+      setNeedsDisplay()
+    }
   }
-
-  // MARK: UILabel
   
+  /// Background color of the badge
   override var backgroundColor: UIColor? {
     get { return fillColor }
     set {
@@ -40,6 +34,20 @@ Project home: https://github.com/marketplacer/swift-badge
         fillColor = UIColor.clearColor()
       }
     }
+  }
+  
+  /// Use backgroudColor instead, this is for internal use.
+  private var fillColor: UIColor = UIColor.redColor()
+  
+  /// Badge insets that describe the margin between text and the edge of the badge.
+  @IBInspectable var insets: CGSize = CGSize(width: 2, height: 2) {
+    didSet {
+      invalidateIntrinsicContentSize()
+    }
+  }
+  
+  convenience init() {
+    self.init(frame: CGRect())
   }
   
   override init(frame: CGRect) {
@@ -54,7 +62,7 @@ Project home: https://github.com/marketplacer/swift-badge
     setup()
   }
   
-  // Add custom insets
+  /// Add custom insets around the text
   override func textRectForBounds(bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
     let rect = super.textRectForBounds(bounds, limitedToNumberOfLines: numberOfLines)
 
@@ -72,7 +80,6 @@ Project home: https://github.com/marketplacer/swift-badge
   }
   
   override func drawTextInRect(rect: CGRect) {
-    
     layer.cornerRadius = rect.height / 2
     
     let insetsWithBorder = actualInsetsWithBorder()
@@ -87,31 +94,24 @@ Project home: https://github.com/marketplacer/swift-badge
     super.drawTextInRect(rectWithoutInsets)
   }
   
+  /// Draw the background of the badge
   override func drawRect(rect: CGRect) {
-
-    if let _ = UIGraphicsGetCurrentContext() {
-      
-      let rectInset = CGRectInset(rect, borderWidth/2, borderWidth/2)
-      let path = UIBezierPath(roundedRect: rectInset, cornerRadius: rect.height/2)
-      
-      fillColor.setFill()
-      path.fill()
-      
-      if borderWidth > 0 {
-        borderColor.setStroke()
-        path.lineWidth = borderWidth
-        path.stroke()
-      }
-      
+    let rectInset = CGRectInset(rect, borderWidth/2, borderWidth/2)
+    let path = UIBezierPath(roundedRect: rectInset, cornerRadius: rect.height/2)
+    
+    fillColor.setFill()
+    path.fill()
+    
+    if borderWidth > 0 {
+      borderColor.setStroke()
+      path.lineWidth = borderWidth
+      path.stroke()
     }
     
     super.drawRect(rect)
   }
   
   private func setup() {
-    translatesAutoresizingMaskIntoConstraints = false
-    
-    //textColor = UIColor.whiteColor()
     textAlignment = NSTextAlignment.Center
     
     // Shadow
@@ -138,11 +138,11 @@ Project home: https://github.com/marketplacer/swift-badge
     setNeedsDisplay()
   }
   
-//  /// Draws the stars when the view comes out of storyboard with default settings
-//  override func awakeFromNib() {
-//    super.awakeFromNib()
-//    
-//    setNeedsDisplay()
-//  }
+  /// Draws the stars when the view comes out of storyboard with default settings
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    setNeedsDisplay()
+  }
   
 }
