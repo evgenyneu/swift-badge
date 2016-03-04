@@ -23,6 +23,8 @@ Swift badge is written in Swift 2.0 for Xcode 7. To use it with Swift 1.2 get th
 * Add auto layout constraints to position the badge.
 * Set the badge properties in the attributes inspector.
 
+<img src='https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift_badge_attributes_inspector.png' width='376' alt='Change badge properties in attribute inspector'>
+
 
 ### Creating a badge from code
 
