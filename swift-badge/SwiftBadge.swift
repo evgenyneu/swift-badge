@@ -8,19 +8,17 @@ Project home: https://github.com/marketplacer/swift-badge
 */
 @IBDesignable class SwiftBadge: UILabel {
   
-  /// Color of the bardge border
+  /// Width of the badge border
   @IBInspectable var borderWidth: CGFloat = 0 {
     didSet {
       invalidateIntrinsicContentSize()
-      setNeedsDisplay()
     }
   }
   
-  /// Width of the badge border
+  /// Color of the bardge border
   @IBInspectable var borderColor: UIColor = UIColor.whiteColor() {
     didSet {
       invalidateIntrinsicContentSize()
-      setNeedsDisplay()
     }
   }
   
@@ -33,6 +31,7 @@ Project home: https://github.com/marketplacer/swift-badge
       } else {
         fillColor = UIColor.clearColor()
       }
+      
       setNeedsDisplay()
     }
   }
@@ -44,17 +43,16 @@ Project home: https://github.com/marketplacer/swift-badge
   @IBInspectable var insets: CGSize = CGSize(width: 2, height: 2) {
     didSet {
       invalidateIntrinsicContentSize()
-      setNeedsDisplay()
     }
   }
   
   // MARK: Badge shadow
+  // --------------------------
   
   /// Opacity of the badge shadow
   @IBInspectable var shadowOpacityBadge: CGFloat = 0.5 {
     didSet {
       layer.shadowOpacity = Float(shadowOpacityBadge)
-      invalidateIntrinsicContentSize()
       setNeedsDisplay()
     }
   }
@@ -63,7 +61,6 @@ Project home: https://github.com/marketplacer/swift-badge
   @IBInspectable var shadowRadiusBadge: CGFloat = 0.5 {
     didSet {
       layer.shadowRadius = shadowRadiusBadge
-      invalidateIntrinsicContentSize()
       setNeedsDisplay()
     }
   }
@@ -72,7 +69,6 @@ Project home: https://github.com/marketplacer/swift-badge
   @IBInspectable var shadowColorBadge: UIColor = UIColor.blackColor() {
     didSet {
       layer.shadowColor = shadowColorBadge.CGColor
-      invalidateIntrinsicContentSize()
       setNeedsDisplay()
     }
   }
@@ -81,7 +77,6 @@ Project home: https://github.com/marketplacer/swift-badge
   @IBInspectable var shadowOffsetBadge: CGSize = CGSize(width: 0, height: 0) {
     didSet {
       layer.shadowOffset = shadowOffsetBadge
-      invalidateIntrinsicContentSize()
       setNeedsDisplay()
     }
   }
