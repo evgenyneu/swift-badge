@@ -3,7 +3,8 @@
 This is a badge view for iOS 7+ written in Swift. The style is similar to the springboard badges in iOS 7 or 8.
 The view is a subclass of UILabel view.
 
-<img src='https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift-badge.png' height='49' alt='Swift Badge'>
+<img src='graphics/swift-badge.png' height='49' alt='Swift Badge'>
+<img src='graphics/swift-badge-with-border.png' height='49' alt='Swift Badge with border'>
 
 ## Usage
 
@@ -41,7 +42,7 @@ view.addSubview(badge)
 
 ```
 // text
-badge.text = '2'
+badge.text = "2"
 
 // insets
 badge.defaultInsets = CGSize(width: 12, height: 12)
@@ -63,6 +64,10 @@ badge.layer.shadowColor = UIColor.blackColor().CGColor
 
 // no shadow
 badge.layer.shadowOpacity = 0
+
+// set border width and color
+badge.borderWidth = 2.0
+badge.borderColor = UIColor.yellowColor()
 ```
 
 Tip: try calling `badge.invalidateIntrinsicContentSize()` if propery changes are not updated.
@@ -72,4 +77,3 @@ Tip: try calling `badge.invalidateIntrinsicContentSize()` if propery changes are
 There is a great alternative badge created by Sascha Paulus in Objective-C.
 
 https://github.com/ckteebe/CustomBadge
-
