@@ -8,6 +8,13 @@ Project home: https://github.com/marketplacer/swift-badge
 */
 @IBDesignable class SwiftBadge: UILabel {
   
+  /// Background color of the badge
+  @IBInspectable  var badgeColor: UIColor = UIColor.redColor() {
+    didSet {
+      setNeedsDisplay()
+    }
+  }
+  
   /// Width of the badge border
   @IBInspectable var borderWidth: CGFloat = 0 {
     didSet {
@@ -19,13 +26,6 @@ Project home: https://github.com/marketplacer/swift-badge
   @IBInspectable var borderColor: UIColor = UIColor.whiteColor() {
     didSet {
       invalidateIntrinsicContentSize()
-    }
-  }
-  
-  /// Background color of the badge
-  @IBInspectable  var badgeColor: UIColor = UIColor.redColor() {
-    didSet {
-      setNeedsDisplay()
     }
   }
   
