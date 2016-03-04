@@ -1,6 +1,6 @@
 # Badge control for iOS written in Swift
 
-This is a badge view for iOS 7+ written in Swift. The style is similar to the springboard badges in iOS 7 or 8.
+This is a badge view for iOS 7+ written in Swift. The style is similar to the springboard badge in iOS.
 The badge is a subclass of UILabel view and can be customized from the Storyboard.
 
 <img src='graphics/swift-badge.png' height='49' alt='Swift Badge'>
