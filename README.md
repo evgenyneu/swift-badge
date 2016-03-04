@@ -13,9 +13,7 @@ Copy [SwiftBadge.swift](https://github.com/marketplacer/swift-badge/blob/master/
 Swift badge is written in Swift 2.0 for Xcode 7. To use it with Swift 1.2 get the [SwiftBadge.swift for Xcode 6](https://github.com/marketplacer/swift-badge/blob/swift-1.2/swift-badge/SwiftBadge.swift) or checkout the `swift-1.2` tag.
 
 
-
-
-### Creating a badge in storyboard
+### Creating a badge in Storyboard
 
 * Drag a **Label** to your view.
 * Set its `class` to `SwiftBadge` in identity inspector.
@@ -23,13 +21,8 @@ Swift badge is written in Swift 2.0 for Xcode 7. To use it with Swift 1.2 get th
 <img src='https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift-badge-class.png' alt='Add badge to storyboard'>
 
 * Add auto layout constraints to position the badge.
-* Font can be set in the attribute inspector.
-* Colors and shadow can only be customized in code (see below).
+* Set the badge properties in the attributes inspector.
 
-Note:
-
-* Badge will still look like an ordinary label in storyboard.
-* There is no need to set size or width/height constraints for the badge in the storyboard. The size will be determined dynamically based on badge text. You can see how it is done in this demo app.
 
 ### Creating a badge from code
 
@@ -41,36 +34,34 @@ view.addSubview(badge)
 ## Customization
 
 ```
-// text
+// Text
 badge.text = "2"
 
-// insets
-badge.defaultInsets = CGSize(width: 12, height: 12)
+// Insets
+badge.insets = CGSize(width: 12, height: 12)
 
-// font
+// Font
 badge.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
 
-// text color
+// Text color
 badge.textColor = UIColor.yellowColor()
 
-// background color
-badge.layer.backgroundColor = UIColor.blackColor().CGColor
+// Background color
+badge.backgroundColor = UIColor.blackColor()
 
-// shadow
-badge.layer.shadowOpacity = 0.5
-badge.layer.shadowOffset = CGSize(width: 0, height: 0)
-badge.layer.shadowRadius = 1.0
-badge.layer.shadowColor = UIColor.blackColor().CGColor
+// Shadow
+badge.shadowOpacityBadge = 0.5
+badge.shadowOffsetBadge = CGSize(width: 0, height: 0)
+badge.shadowRadiusBadge = 1.0
+badge.shadowColorBadge = UIColor.blackColor()
 
-// no shadow
-badge.layer.shadowOpacity = 0
+// No shadow
+badge.shadowOpacityBadge = 0
 
-// set border width and color
-badge.borderWidth = 2.0
-badge.borderColor = UIColor.yellowColor()
+// Border width and color
+badge.borderWidth = 5.0
+badge.borderColor = UIColor.magentaColor()
 ```
-
-Tip: try calling `badge.invalidateIntrinsicContentSize()` if propery changes are not updated.
 
 ## Alternative
 
