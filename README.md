@@ -25,7 +25,7 @@ Copy [SwiftBadge.swift](https://github.com/marketplacer/swift-badge/blob/master/
 
 ### Creating a badge from code
 
-See [demo app example](https://github.com/marketplacer/swift-badge/blob/master/swift-badge/CreateBadgeFromCodeViewController.swift).
+[See example](https://github.com/marketplacer/swift-badge/blob/master/swift-badge/CreateBadgeFromCodeViewController.swift) of how to create and position the badge from code in the demo app.
 
 ```Swift
 let badge = SwiftBadge()
