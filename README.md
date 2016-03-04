@@ -89,7 +89,7 @@ Here are some alternative badges for iOS.
 
 ## License
 
-Auk is released under the [MIT License](LICENSE).
+SwiftBadge is released under the [MIT License](LICENSE).
 
 ## Feedback is welcome
 
