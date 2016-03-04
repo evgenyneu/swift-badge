@@ -1,4 +1,4 @@
-<img src='graphics/swift_badge_showcase.png' width='530' alt='Swift Badge'>
+<img src='graphics/swift_badge_showcase_2.png' width='353' alt='Swift Badge'>
 
 # Badge control for iOS written in Swift
 
