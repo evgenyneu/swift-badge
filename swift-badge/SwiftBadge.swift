@@ -30,7 +30,7 @@ Project home: https://github.com/marketplacer/swift-badge
   }
   
   /// Badge insets that describe the margin between text and the edge of the badge.
-  @IBInspectable var insets: CGSize = CGSize(width: 2, height: 2) {
+  @IBInspectable var insets: CGSize = CGSize(width: 5, height: 2) {
     didSet {
       invalidateIntrinsicContentSize()
     }
