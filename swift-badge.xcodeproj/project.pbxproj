@@ -15,6 +15,7 @@
 		2B6D031319DB720D000C1A07 /* swift_badgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D031219DB720D000C1A07 /* swift_badgeTests.swift */; };
 		2B6D031D19DB7221000C1A07 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B6D031C19DB7221000C1A07 /* Default-568h@2x.png */; };
 		2B6D031F19DB725C000C1A07 /* SwiftBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D031E19DB725C000C1A07 /* SwiftBadge.swift */; };
+		7E4EF2341C89777600BA1C59 /* CreateBadgeFromCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4EF2331C89777600BA1C59 /* CreateBadgeFromCodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		2B6D031219DB720D000C1A07 /* swift_badgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_badgeTests.swift; sourceTree = "<group>"; };
 		2B6D031C19DB7221000C1A07 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2B6D031E19DB725C000C1A07 /* SwiftBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftBadge.swift; sourceTree = "<group>"; };
+		7E4EF2331C89777600BA1C59 /* CreateBadgeFromCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateBadgeFromCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				2B6D031E19DB725C000C1A07 /* SwiftBadge.swift */,
 				2B6D02FC19DB720D000C1A07 /* AppDelegate.swift */,
+				7E4EF2331C89777600BA1C59 /* CreateBadgeFromCodeViewController.swift */,
 				2B6D02FE19DB720D000C1A07 /* ViewController.swift */,
 				2B6D030019DB720D000C1A07 /* Main.storyboard */,
 				2B6D030319DB720D000C1A07 /* Images.xcassets */,
@@ -223,6 +226,7 @@
 				2B6D02FF19DB720D000C1A07 /* ViewController.swift in Sources */,
 				2B6D02FD19DB720D000C1A07 /* AppDelegate.swift in Sources */,
 				2B6D031F19DB725C000C1A07 /* SwiftBadge.swift in Sources */,
+				7E4EF2341C89777600BA1C59 /* CreateBadgeFromCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
