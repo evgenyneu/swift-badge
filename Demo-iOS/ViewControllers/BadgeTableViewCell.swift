@@ -1,5 +1,4 @@
-
-import UIKit
+import BadgeSwift
 
 class BadgeTableViewCell: UITableViewCell {
   @IBOutlet weak var badge: BadgeSwift!

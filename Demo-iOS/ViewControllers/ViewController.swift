@@ -1,4 +1,4 @@
-import UIKit
+import BadgeSwift
 
 class ViewController: UIViewController {
   

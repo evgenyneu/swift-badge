@@ -1,4 +1,4 @@
-import UIKit
+import BadgeSwift
 
 class CreateBadgeFromCodeViewController: UIViewController {
   override func viewDidLoad() {

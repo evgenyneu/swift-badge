@@ -17,8 +17,33 @@
 		7E1365B61D19177F00C7468A /* CreateBadgeFromCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1365B51D19177F00C7468A /* CreateBadgeFromCodeViewController.swift */; };
 		7E1365B81D19179200C7468A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1365B71D19179200C7468A /* TableViewController.swift */; };
 		7E1365BA1D1917A100C7468A /* BadgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1365B91D1917A100C7468A /* BadgeTableViewCell.swift */; };
-		7E1365BB1D1917BB00C7468A /* BadgeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E13659A1D19168D00C7468A /* BadgeSwift.swift */; };
+		7E3884BE1D191E0000C0B03A /* BadgeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E13658F1D1915E000C7468A /* BadgeSwift.framework */; };
+		7E3884BF1D191E0000C0B03A /* BadgeSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E13658F1D1915E000C7468A /* BadgeSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E3884C01D191E0000C0B03A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E1365861D1915E000C7468A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E13658E1D1915E000C7468A;
+			remoteInfo = BadgeSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7E3884C21D191E0000C0B03A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7E3884BF1D191E0000C0B03A /* BadgeSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7E13658F1D1915E000C7468A /* BadgeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BadgeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3884BE1D191E0000C0B03A /* BadgeSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,10 +172,12 @@
 				7E13659C1D19170700C7468A /* Sources */,
 				7E13659D1D19170700C7468A /* Frameworks */,
 				7E13659E1D19170700C7468A /* Resources */,
+				7E3884C21D191E0000C0B03A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7E3884C11D191E0000C0B03A /* PBXTargetDependency */,
 			);
 			name = "Demo-iOS";
 			productName = "Demo-iOS";
@@ -234,7 +262,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E1365BA1D1917A100C7468A /* BadgeTableViewCell.swift in Sources */,
-				7E1365BB1D1917BB00C7468A /* BadgeSwift.swift in Sources */,
 				7E1365B41D19176800C7468A /* ViewController.swift in Sources */,
 				7E1365A31D19170700C7468A /* AppDelegate.swift in Sources */,
 				7E1365B61D19177F00C7468A /* CreateBadgeFromCodeViewController.swift in Sources */,
@@ -243,6 +270,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E3884C11D191E0000C0B03A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E13658E1D1915E000C7468A /* BadgeSwift */;
+			targetProxy = 7E3884C01D191E0000C0B03A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7E1365A61D19170700C7468A /* Main.storyboard */ = {
@@ -399,6 +434,7 @@
 		7E1365B01D19170700C7468A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Demo-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -411,6 +447,7 @@
 		7E1365B11D19170700C7468A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Demo-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -439,6 +476,7 @@
 				7E1365991D1915E000C7468A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E1365AF1D19170700C7468A /* Build configuration list for PBXNativeTarget "Demo-iOS" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +485,7 @@
 				7E1365B11D19170700C7468A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
