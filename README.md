@@ -2,6 +2,13 @@
 
 # A badge control for iOS written in Swift
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)][carthage]
+[![CocoaPods Version](https://img.shields.io/cocoapods/v/BadgeSwift.svg?style=flat)][cocoadocs]
+[![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)][cocoadocs]
+[![Platform](https://img.shields.io/cocoapods/p/BadgeSwift.svg?style=flat)][cocoadocs]
+[cocoadocs]: http://cocoadocs.org/docsets/BadgeSwift
+[carthage]: https://github.com/Carthage/Carthage
+
 * The badge is a subclass of UILabel view.
 * It can be created and customized from the Storyboard or programatically.
 
@@ -85,9 +92,9 @@ badge.borderColor = UIColor.magentaColor()
 
 This project includes a demo app.
 
-<img src='graphics/demo_app/swift_badge_ios_demo_app.png' width='320' alt='Swift badge for iOS demo app'>
-<img src='graphics/demo_app/swift_badge_ios_in_table_view.png' width='320' alt='Show Swift badge in a table view in iOS'>
-<img src='graphics/demo_app/swift_badge_create_from_code.png' width='320' alt='Create badge from code Swift badge for iOS'>
+<img src='graphics/demo_app/swift_badge_ios_demo_app.png' width='320' alt='BadgeSwift for iOS demo app'>
+<img src='graphics/demo_app/swift_badge_ios_in_table_view.png' width='320' alt='Show BadgeSwift in a table view in iOS'>
+<img src='graphics/demo_app/swift_badge_create_from_code.png' width='320' alt='Create badge from code BadgeSwift for iOS'>
 
 ## Alternative solutions
 
@@ -106,7 +113,7 @@ Here are some alternative badges for iOS.
 
 ## License
 
-SwiftBadge is released under the [MIT License](LICENSE).
+BadgeSwift is released under the [MIT License](LICENSE).
 
 ## Feedback is welcome
 
