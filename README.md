@@ -7,13 +7,13 @@
 
 ## Usage
 
-Copy [SwiftBadge.swift](https://github.com/marketplacer/swift-badge/blob/master/SwiftBadge/SwiftBadge.swift) to your project.
+Copy [BadgeSwift.swift](https://github.com/marketplacer/swift-badge/blob/master/BadgeSwift/BadgeSwift.swift) to your project.
 
 
 ### Creating a badge in Storyboard
 
 * Drag a **Label** to your view.
-* Set its `class` to `SwiftBadge` in identity inspector.
+* Set its `class` to `BadgeSwift` in identity inspector.
 
 <img src='graphics/swift_badge_class_name_2.png' width='258' alt='Add badge to storyboard'>
 
