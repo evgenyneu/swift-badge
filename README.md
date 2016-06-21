@@ -1,6 +1,6 @@
 <img src='graphics/swift_badge_showcase_2.png' width='353' alt='Swift Badge'>
 
-# Badge control for iOS written in Swift
+# A badge control for iOS written in Swift
 
 * The badge is a subclass of UILabel view.
 * It can be created and customized from the Storyboard or programatically.
