@@ -44,7 +44,7 @@ If you are using CocoaPods add this text to your Podfile and run `pod install`.
 
 * Customize the badge properties in the attributes inspector (text, color and other).
 
-<img src='graphics/swift_badge_attributes_inspector_2.png' width='374' alt='Change badge properties in attribute inspector'>
+<img src='https://github.com/marketplacer/swift-badge/blob/master/graphics/swift_badge_attributes_inspector_2.png' width='374' alt='Change badge properties in attribute inspector'>
 
 
 ### Creating a badge from code
