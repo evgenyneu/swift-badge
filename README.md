@@ -1,6 +1,6 @@
 <img src='graphics/swift_badge_showcase_2.png' width='353' alt='Swift Badge'>
 
-# A badge control for iOS written in Swift
+# A badge control for iOS and tvOS written in Swift
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)][carthage]
 [![CocoaPods Version](https://img.shields.io/cocoapods/v/BadgeSwift.svg?style=flat)][cocoadocs]

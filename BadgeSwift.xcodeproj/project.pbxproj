@@ -19,6 +19,8 @@
 		7E1365BA1D1917A100C7468A /* BadgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1365B91D1917A100C7468A /* BadgeTableViewCell.swift */; };
 		7E3884BE1D191E0000C0B03A /* BadgeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E13658F1D1915E000C7468A /* BadgeSwift.framework */; };
 		7E3884BF1D191E0000C0B03A /* BadgeSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E13658F1D1915E000C7468A /* BadgeSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7E3884CB1D1923BC00C0B03A /* BadgeSwift-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3884CA1D1923BC00C0B03A /* BadgeSwift-tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E3884D01D1923EB00C0B03A /* BadgeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E13659A1D19168D00C7468A /* BadgeSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		7E1365B51D19177F00C7468A /* CreateBadgeFromCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateBadgeFromCodeViewController.swift; sourceTree = "<group>"; };
 		7E1365B71D19179200C7468A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		7E1365B91D1917A100C7468A /* BadgeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeTableViewCell.swift; sourceTree = "<group>"; };
+		7E3884C81D1923BC00C0B03A /* BadgeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BadgeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3884CA1D1923BC00C0B03A /* BadgeSwift-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BadgeSwift-tvOS.h"; sourceTree = "<group>"; };
+		7E3884CC1D1923BC00C0B03A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +83,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7E3884C41D1923BC00C0B03A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,6 +98,7 @@
 			children = (
 				7E1365911D1915E000C7468A /* BadgeSwift */,
 				7E1365A11D19170700C7468A /* Demo-iOS */,
+				7E3884C91D1923BC00C0B03A /* BadgeSwift-tvOS */,
 				7E1365901D1915E000C7468A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +108,7 @@
 			children = (
 				7E13658F1D1915E000C7468A /* BadgeSwift.framework */,
 				7E1365A01D19170700C7468A /* Demo-iOS.app */,
+				7E3884C81D1923BC00C0B03A /* BadgeSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +147,15 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		7E3884C91D1923BC00C0B03A /* BadgeSwift-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				7E3884CA1D1923BC00C0B03A /* BadgeSwift-tvOS.h */,
+				7E3884CC1D1923BC00C0B03A /* Info.plist */,
+			);
+			path = "BadgeSwift-tvOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -141,6 +164,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E1365931D1915E000C7468A /* BadgeSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3884C51D1923BC00C0B03A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3884CB1D1923BC00C0B03A /* BadgeSwift-tvOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +215,24 @@
 			productReference = 7E1365A01D19170700C7468A /* Demo-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7E3884C71D1923BC00C0B03A /* BadgeSwift-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3884CF1D1923BC00C0B03A /* Build configuration list for PBXNativeTarget "BadgeSwift-tvOS" */;
+			buildPhases = (
+				7E3884C31D1923BC00C0B03A /* Sources */,
+				7E3884C41D1923BC00C0B03A /* Frameworks */,
+				7E3884C51D1923BC00C0B03A /* Headers */,
+				7E3884C61D1923BC00C0B03A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BadgeSwift-tvOS";
+			productName = "BadgeSwift-tvOS";
+			productReference = 7E3884C81D1923BC00C0B03A /* BadgeSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +256,12 @@
 						DevelopmentTeamName = "Evgenii Neumerzhitckii";
 						ProvisioningStyle = Manual;
 					};
+					7E3884C71D1923BC00C0B03A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BS677JRE62;
+						DevelopmentTeamName = "Evgenii Neumerzhitckii";
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 7E1365891D1915E000C7468A /* Build configuration list for PBXProject "BadgeSwift" */;
@@ -223,6 +278,7 @@
 			projectRoot = "";
 			targets = (
 				7E13658E1D1915E000C7468A /* BadgeSwift */,
+				7E3884C71D1923BC00C0B03A /* BadgeSwift-tvOS */,
 				7E13659F1D19170700C7468A /* Demo-iOS */,
 			);
 		};
@@ -246,6 +302,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7E3884C61D1923BC00C0B03A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -266,6 +329,14 @@
 				7E1365A31D19170700C7468A /* AppDelegate.swift in Sources */,
 				7E1365B61D19177F00C7468A /* CreateBadgeFromCodeViewController.swift in Sources */,
 				7E1365B81D19179200C7468A /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3884C31D1923BC00C0B03A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3884D01D1923EB00C0B03A /* BadgeSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +528,46 @@
 			};
 			name = Release;
 		};
+		7E3884CD1D1923BC00C0B03A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "BadgeSwift-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marketplacer.BadgeSwift-tvOS";
+				PRODUCT_NAME = BadgeSwift;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		7E3884CE1D1923BC00C0B03A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "BadgeSwift-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marketplacer.BadgeSwift-tvOS";
+				PRODUCT_NAME = BadgeSwift;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -486,6 +597,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		7E3884CF1D1923BC00C0B03A /* Build configuration list for PBXNativeTarget "BadgeSwift-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3884CD1D1923BC00C0B03A /* Debug */,
+				7E3884CE1D1923BC00C0B03A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

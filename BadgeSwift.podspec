@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name        = "BadgeSwift"
-  s.version     = "2.0.4"
+  s.version     = "2.0.5"
   s.license     = { :type => "MIT" }
   s.homepage    = "https://github.com/marketplacer/swift-badge"
-  s.summary     = "Badge view for iOS written in Swift"
+  s.summary     = "Badge view for iOS and tvOS written in Swift"
   s.description  = <<-DESC
                    This is a UI widget for iOS that shows a badge.
 
