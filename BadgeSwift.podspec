@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
                    * The badge is a subclass of UILabel view.
                    * It can be created and customized from the Storyboard or programatically.
-                   * There is nothing more to say really, it's just a badge.
+                   * There is nothing more to say really.
                    DESC
   s.authors     = { "Evgenii Neumerzhitckii" => "sausageskin@gmail.com" }
   s.source      = { :git => "https://github.com/marketplacer/swift-badge.git", :tag => s.version }
