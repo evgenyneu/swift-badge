@@ -45,11 +45,9 @@ If you are using CocoaPods add this text to your Podfile and run `pod install`.
 * Customize the badge properties in the attributes inspector (text, color and other).
 * If storyboard does not show the badge correctly click **Refresh All Views** from the **Editor** menu.
 
-*Note*: Carthage setup method does not allow to customize Cosmos view from the storyboard, please do it from code instead.
-
-
 <img src='https://github.com/marketplacer/swift-badge/blob/master/graphics/swift_badge_attributes_inspector_2.png' width='374' alt='Change badge properties in attribute inspector'>
 
+*Note*: Carthage setup method does not allow to customize Cosmos view from the storyboard, please do it from code instead.
 
 
 ### Creating a badge from code
