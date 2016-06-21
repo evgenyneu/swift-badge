@@ -21,10 +21,19 @@
 		7E3884BF1D191E0000C0B03A /* BadgeSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E13658F1D1915E000C7468A /* BadgeSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E3884CB1D1923BC00C0B03A /* BadgeSwift-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3884CA1D1923BC00C0B03A /* BadgeSwift-tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E3884D01D1923EB00C0B03A /* BadgeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E13659A1D19168D00C7468A /* BadgeSwift.swift */; };
+		7E3884F91D19273B00C0B03A /* BadgeSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3884F81D19273B00C0B03A /* BadgeSwiftTests.swift */; };
+		7E3884FB1D19273B00C0B03A /* BadgeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E13658F1D1915E000C7468A /* BadgeSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		7E3884C01D191E0000C0B03A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E1365861D1915E000C7468A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E13658E1D1915E000C7468A;
+			remoteInfo = BadgeSwift;
+		};
+		7E3884FC1D19273B00C0B03A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7E1365861D1915E000C7468A /* Project object */;
 			proxyType = 1;
@@ -65,6 +74,9 @@
 		7E3884C81D1923BC00C0B03A /* BadgeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BadgeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3884CA1D1923BC00C0B03A /* BadgeSwift-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BadgeSwift-tvOS.h"; sourceTree = "<group>"; };
 		7E3884CC1D1923BC00C0B03A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3884F61D19273B00C0B03A /* BadgeSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BadgeSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3884F81D19273B00C0B03A /* BadgeSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSwiftTests.swift; sourceTree = "<group>"; };
+		7E3884FA1D19273B00C0B03A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7E3884F31D19273B00C0B03A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3884FB1D19273B00C0B03A /* BadgeSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,6 +119,7 @@
 				7E1365911D1915E000C7468A /* BadgeSwift */,
 				7E1365A11D19170700C7468A /* Demo-iOS */,
 				7E3884C91D1923BC00C0B03A /* BadgeSwift-tvOS */,
+				7E3884F71D19273B00C0B03A /* BadgeSwiftTests */,
 				7E1365901D1915E000C7468A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,6 +130,7 @@
 				7E13658F1D1915E000C7468A /* BadgeSwift.framework */,
 				7E1365A01D19170700C7468A /* Demo-iOS.app */,
 				7E3884C81D1923BC00C0B03A /* BadgeSwift.framework */,
+				7E3884F61D19273B00C0B03A /* BadgeSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +176,15 @@
 				7E3884CC1D1923BC00C0B03A /* Info.plist */,
 			);
 			path = "BadgeSwift-tvOS";
+			sourceTree = "<group>";
+		};
+		7E3884F71D19273B00C0B03A /* BadgeSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E3884F81D19273B00C0B03A /* BadgeSwiftTests.swift */,
+				7E3884FA1D19273B00C0B03A /* Info.plist */,
+			);
+			path = BadgeSwiftTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +264,24 @@
 			productReference = 7E3884C81D1923BC00C0B03A /* BadgeSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		7E3884F51D19273B00C0B03A /* BadgeSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3885001D19273B00C0B03A /* Build configuration list for PBXNativeTarget "BadgeSwiftTests" */;
+			buildPhases = (
+				7E3884F21D19273B00C0B03A /* Sources */,
+				7E3884F31D19273B00C0B03A /* Frameworks */,
+				7E3884F41D19273B00C0B03A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E3884FD1D19273B00C0B03A /* PBXTargetDependency */,
+			);
+			name = BadgeSwiftTests;
+			productName = BadgeSwiftTests;
+			productReference = 7E3884F61D19273B00C0B03A /* BadgeSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -262,6 +311,12 @@
 						DevelopmentTeamName = "Evgenii Neumerzhitckii";
 						ProvisioningStyle = Manual;
 					};
+					7E3884F51D19273B00C0B03A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BS677JRE62;
+						DevelopmentTeamName = "Evgenii Neumerzhitckii";
+						ProvisioningStyle = Manual;
+					};
 				};
 			};
 			buildConfigurationList = 7E1365891D1915E000C7468A /* Build configuration list for PBXProject "BadgeSwift" */;
@@ -280,6 +335,7 @@
 				7E13658E1D1915E000C7468A /* BadgeSwift */,
 				7E3884C71D1923BC00C0B03A /* BadgeSwift-tvOS */,
 				7E13659F1D19170700C7468A /* Demo-iOS */,
+				7E3884F51D19273B00C0B03A /* BadgeSwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,6 +359,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7E3884C61D1923BC00C0B03A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3884F41D19273B00C0B03A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,6 +403,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7E3884F21D19273B00C0B03A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3884F91D19273B00C0B03A /* BadgeSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -347,6 +418,11 @@
 			isa = PBXTargetDependency;
 			target = 7E13658E1D1915E000C7468A /* BadgeSwift */;
 			targetProxy = 7E3884C01D191E0000C0B03A /* PBXContainerItemProxy */;
+		};
+		7E3884FD1D19273B00C0B03A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E13658E1D1915E000C7468A /* BadgeSwift */;
+			targetProxy = 7E3884FC1D19273B00C0B03A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -568,6 +644,30 @@
 			};
 			name = Release;
 		};
+		7E3884FE1D19273B00C0B03A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BadgeSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marketplacer.BadgeSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7E3884FF1D19273B00C0B03A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BadgeSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marketplacer.BadgeSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -606,6 +706,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		7E3885001D19273B00C0B03A /* Build configuration list for PBXNativeTarget "BadgeSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3884FE1D19273B00C0B03A /* Debug */,
+				7E3884FF1D19273B00C0B03A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
