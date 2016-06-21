@@ -40,7 +40,7 @@ If you are using CocoaPods add this text to your Podfile and run `pod install`.
 * Set its `class` to `BadgeSwift` in identity inspector.
 * Set the `module` property to `BadgeSwift` if you used Carthage or CocoaPods setup methods.
 
-<img src='graphics/swift_badge_class_name_2.png' width='258' alt='Add badge to storyboard'>
+<img src='https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift_badge_class_name_3.png' width='258' alt='Add badge to storyboard'>
 
 * Customize the badge properties in the attributes inspector (text, color and other).
 
