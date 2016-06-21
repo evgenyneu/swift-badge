@@ -2,7 +2,7 @@ import UIKit
 
 /**
  
- Badge view control for iOS.
+ Badge view control for iOS and tvOS.
  
  Project home: https://github.com/marketplacer/swift-badge
  
