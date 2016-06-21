@@ -4,7 +4,6 @@
 
 * The badge is a subclass of UILabel view.
 * It can be created and customized from the Storyboard or programatically.
-* Supports iOS 7+.
 
 ## Usage
 
