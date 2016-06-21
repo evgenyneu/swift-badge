@@ -10,7 +10,7 @@
 [carthage]: https://github.com/Carthage/Carthage
 
 * The badge is a subclass of UILabel view.
-* It can be created and customized from the Storyboard or programatically.
+* It can be created and customized from the Storyboard or from the code.
 
 ## Setup (Swift 3.0)
 
@@ -38,7 +38,7 @@ Setup a [previous version](https://github.com/marketplacer/swift-badge/wiki/Lega
 
 ## Usage
 
-### Creating a badge in Storyboard
+### Creating a badge in the Storyboard
 
 * Drag a **Label** to your view.
 * Set its `class` to `BadgeSwift` in identity inspector.
@@ -54,7 +54,7 @@ Setup a [previous version](https://github.com/marketplacer/swift-badge/wiki/Lega
 *Note*: Carthage setup method does not allow to customize Cosmos view from the storyboard, please do it from code instead.
 
 
-### Creating a badge from code
+### Creating a badge from the code
 
 ```Swift
 let badge = BadgeSwift()

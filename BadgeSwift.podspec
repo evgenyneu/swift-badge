@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "BadgeSwift"
-  s.version     = "2.0.10"
+  s.version     = "2.0.11"
   s.license     = { :type => "MIT" }
   s.homepage    = "https://github.com/marketplacer/swift-badge"
   s.summary     = "Badge view for iOS and tvOS written in Swift"
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                    This is a UI widget for iOS that shows a badge.
 
                    * The badge is a subclass of UILabel view.
-                   * It can be created and customized from the Storyboard or programatically.
+                   * It can be created and customized from the Storyboard or from the code.
                    DESC
   s.authors     = { "Evgenii Neumerzhitckii" => "sausageskin@gmail.com" }
   s.source      = { :git => "https://github.com/marketplacer/swift-badge.git", :tag => s.version }
