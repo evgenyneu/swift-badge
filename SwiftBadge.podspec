@@ -12,9 +12,8 @@ Pod::Spec.new do |s|
                    * There is nothing more to say really, it's just a badge.
                    DESC
   s.authors     = { "Evgenii Neumerzhitckii" => "sausageskin@gmail.com" }
-  s.source      = { :git => "https://github.com/marketplacer/Dodo.git", :tag => s.version }
-  s.screenshots  = "https://raw.githubusercontent.com/marketplacer/Dodo/master/Graphics/Paintings/alices_adventures_in_wonderland.png"
-  s.source_files = "Dodo/**/*.swift"
-  s.resources  = "Dodo/**/*.xcassets"
+  s.source      = { :git => "https://github.com/marketplacer/swift-badge.git", :tag => s.version }
+  s.screenshots  = "https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift_badge_showcase_2.png"
+  s.source_files = "SwiftBadge/**/*.swift"
   s.ios.deployment_target = "8.0"
 end
