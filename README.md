@@ -32,6 +32,10 @@ If you are using CocoaPods add this text to your Podfile and run `pod install`.
     target 'Your target name'
     pod 'BadgeSwift', '~> 2.0'
 
+### Legacy Swift versions
+
+Setup a [previous version](https://github.com/marketplacer/swift-badge/wiki/Legacy-Swift-versions) of the library if you use an older version of Swift.
+
 ## Usage
 
 ### Creating a badge in Storyboard
