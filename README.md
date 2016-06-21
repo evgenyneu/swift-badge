@@ -23,7 +23,7 @@ If you are using CocoaPods add this text to your Podfile and run `pod install`.
 
     use_frameworks!
     target 'Your target name'
-    pod 'SwiftBadge', '~> 2.0'
+    pod 'BadgeSwift', '~> 2.0'
 
 ## Usage
 
@@ -34,7 +34,7 @@ If you are using CocoaPods add this text to your Podfile and run `pod install`.
 
 <img src='graphics/swift_badge_class_name_2.png' width='258' alt='Add badge to storyboard'>
 
-* Set the badge properties in the attributes inspector.
+* Customize the badge properties in the attributes inspector (text, color and other).
 
 <img src='graphics/swift_badge_attributes_inspector_2.png' width='374' alt='Change badge properties in attribute inspector'>
 
