@@ -2,14 +2,14 @@ import UIKit
 
 /**
  
-Badge view control for iOS.
-Project home: https://github.com/marketplacer/swift-badge
+ Badge view control for iOS.
+ Project home: https://github.com/marketplacer/swift-badge
  
-*/
+ */
 @IBDesignable class SwiftBadge: UILabel {
   
   /// Background color of the badge
-  @IBInspectable  var badgeColor: UIColor = UIColor.redColor() {
+  @IBInspectable  var badgeColor: UIColor = UIColor.red() {
     didSet {
       setNeedsDisplay()
     }
@@ -23,7 +23,7 @@ Project home: https://github.com/marketplacer/swift-badge
   }
   
   /// Color of the bardge border
-  @IBInspectable var borderColor: UIColor = UIColor.whiteColor() {
+  @IBInspectable var borderColor: UIColor = UIColor.white() {
     didSet {
       invalidateIntrinsicContentSize()
     }
@@ -56,9 +56,9 @@ Project home: https://github.com/marketplacer/swift-badge
   }
   
   /// Color of the badge shadow
-  @IBInspectable var shadowColorBadge: UIColor = UIColor.blackColor() {
+  @IBInspectable var shadowColorBadge: UIColor = UIColor.black() {
     didSet {
-      layer.shadowColor = shadowColorBadge.CGColor
+      layer.shadowColor = shadowColorBadge.cgColor
       setNeedsDisplay()
     }
   }
@@ -88,23 +88,23 @@ Project home: https://github.com/marketplacer/swift-badge
   }
   
   /// Add custom insets around the text
-  override func textRectForBounds(bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
-    let rect = super.textRectForBounds(bounds, limitedToNumberOfLines: numberOfLines)
-
+  override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+    let rect = super.textRect(forBounds: bounds, limitedToNumberOfLines: numberOfLines)
+    
     var insetsWithBorder = actualInsetsWithBorder()
-    let rectWithDefaultInsets = CGRectInset(rect, -insetsWithBorder.width, -insetsWithBorder.height)
+    let rectWithDefaultInsets = rect.insetBy(dx: -insetsWithBorder.width, dy: -insetsWithBorder.height)
     
     // If width is less than height
     // Adjust the width insets to make it look round
     if rectWithDefaultInsets.width < rectWithDefaultInsets.height {
       insetsWithBorder.width = (rectWithDefaultInsets.height - rect.width) / 2
     }
-    let result = CGRectInset(rect, -insetsWithBorder.width, -insetsWithBorder.height)
-
+    let result = rect.insetBy(dx: -insetsWithBorder.width, dy: -insetsWithBorder.height)
+    
     return result
   }
   
-  override func drawTextInRect(rect: CGRect) {
+  override func drawText(in rect: CGRect) {
     layer.cornerRadius = rect.height / 2
     
     let insetsWithBorder = actualInsetsWithBorder()
@@ -115,13 +115,13 @@ Project home: https://github.com/marketplacer/swift-badge
       right: insetsWithBorder.width)
     
     let rectWithoutInsets = UIEdgeInsetsInsetRect(rect, insets)
-
-    super.drawTextInRect(rectWithoutInsets)
+    
+    super.drawText(in: rectWithoutInsets)
   }
   
   /// Draw the background of the badge
-  override func drawRect(rect: CGRect) {
-    let rectInset = CGRectInset(rect, borderWidth/2, borderWidth/2)
+  override func draw(_ rect: CGRect) {
+    let rectInset = rect.insetBy(dx: borderWidth/2, dy: borderWidth/2)
     let path = UIBezierPath(roundedRect: rectInset, cornerRadius: rect.height/2)
     
     badgeColor.setFill()
@@ -133,11 +133,11 @@ Project home: https://github.com/marketplacer/swift-badge
       path.stroke()
     }
     
-    super.drawRect(rect)
+    super.draw(rect)
   }
   
   private func setup() {
-    textAlignment = NSTextAlignment.Center
+    textAlignment = NSTextAlignment.center
     clipsToBounds = false // Allows shadow to spread beyond the bounds of the badge
   }
   

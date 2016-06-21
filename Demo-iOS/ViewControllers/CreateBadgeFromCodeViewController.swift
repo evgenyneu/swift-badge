@@ -14,7 +14,7 @@ class CreateBadgeFromCodeViewController: UIViewController {
     positionBadge(badge)
   }
   
-  private func configureBadge(badge: SwiftBadge) {
+  private func configureBadge(_ badge: SwiftBadge) {
     // Text
     badge.text = "2"
     
@@ -22,49 +22,49 @@ class CreateBadgeFromCodeViewController: UIViewController {
     badge.insets = CGSize(width: 12, height: 12)
     
     // Font
-    badge.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+    badge.font = UIFont.preferredFont(forTextStyle: UIFontTextStyleBody)
     
     // Text color
-    badge.textColor = UIColor.yellowColor()
+    badge.textColor = UIColor.yellow()
     
     // Badge color
-    badge.badgeColor = UIColor.blackColor()
+    badge.badgeColor = UIColor.black()
     
     // Shadow
     badge.shadowOpacityBadge = 0.5
     badge.shadowOffsetBadge = CGSize(width: 0, height: 0)
     badge.shadowRadiusBadge = 1.0
-    badge.shadowColorBadge = UIColor.blackColor()
+    badge.shadowColorBadge = UIColor.black()
     
     // No shadow
     badge.shadowOpacityBadge = 0
     
     // Border width and color
     badge.borderWidth = 5.0
-    badge.borderColor = UIColor.magentaColor()
+    badge.borderColor = UIColor.magenta()
   }
   
-  private func positionBadge(badge: UIView) {
+  private func positionBadge(_ badge: UIView) {
     badge.translatesAutoresizingMaskIntoConstraints = false
     var constraints = [NSLayoutConstraint]()
     
     // Center the badge vertically in its container
     constraints.append(NSLayoutConstraint(
       item: badge,
-      attribute: NSLayoutAttribute.CenterY,
-      relatedBy: NSLayoutRelation.Equal,
+      attribute: NSLayoutAttribute.centerY,
+      relatedBy: NSLayoutRelation.equal,
       toItem: view,
-      attribute: NSLayoutAttribute.CenterY,
+      attribute: NSLayoutAttribute.centerY,
       multiplier: 1, constant: 0)
     )
     
     // Center the badge horizontally in its container
     constraints.append(NSLayoutConstraint(
       item: badge,
-      attribute: NSLayoutAttribute.CenterX,
-      relatedBy: NSLayoutRelation.Equal,
+      attribute: NSLayoutAttribute.centerX,
+      relatedBy: NSLayoutRelation.equal,
       toItem: view,
-      attribute: NSLayoutAttribute.CenterX,
+      attribute: NSLayoutAttribute.centerX,
       multiplier: 1, constant: 0)
     )
     
