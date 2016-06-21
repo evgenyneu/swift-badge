@@ -14,7 +14,7 @@
 
 ## Setup (Swift 3.0)
 
-There are three ways you can add Sigma to your Xcode project.
+There are three ways you can add BadgeSwift to your Xcode project.
 
 **Add source (iOS 7+)**
 
