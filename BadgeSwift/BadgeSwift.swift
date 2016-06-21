@@ -3,34 +3,35 @@ import UIKit
 /**
  
  Badge view control for iOS.
+ 
  Project home: https://github.com/marketplacer/swift-badge
  
  */
-@IBDesignable class BadgeSwift: UILabel {
+@IBDesignable public class BadgeSwift: UILabel {
   
   /// Background color of the badge
-  @IBInspectable  var badgeColor: UIColor = UIColor.red() {
+  @IBInspectable public var badgeColor: UIColor = UIColor.red() {
     didSet {
       setNeedsDisplay()
     }
   }
   
   /// Width of the badge border
-  @IBInspectable var borderWidth: CGFloat = 0 {
+  @IBInspectable public var borderWidth: CGFloat = 0 {
     didSet {
       invalidateIntrinsicContentSize()
     }
   }
   
   /// Color of the bardge border
-  @IBInspectable var borderColor: UIColor = UIColor.white() {
+  @IBInspectable public var borderColor: UIColor = UIColor.white() {
     didSet {
       invalidateIntrinsicContentSize()
     }
   }
   
   /// Badge insets that describe the margin between text and the edge of the badge.
-  @IBInspectable var insets: CGSize = CGSize(width: 5, height: 2) {
+  @IBInspectable public var insets: CGSize = CGSize(width: 5, height: 2) {
     didSet {
       invalidateIntrinsicContentSize()
     }
@@ -40,7 +41,7 @@ import UIKit
   // --------------------------
   
   /// Opacity of the badge shadow
-  @IBInspectable var shadowOpacityBadge: CGFloat = 0.5 {
+  @IBInspectable public var shadowOpacityBadge: CGFloat = 0.5 {
     didSet {
       layer.shadowOpacity = Float(shadowOpacityBadge)
       setNeedsDisplay()
@@ -48,7 +49,7 @@ import UIKit
   }
   
   /// Size of the badge shadow
-  @IBInspectable var shadowRadiusBadge: CGFloat = 0.5 {
+  @IBInspectable public var shadowRadiusBadge: CGFloat = 0.5 {
     didSet {
       layer.shadowRadius = shadowRadiusBadge
       setNeedsDisplay()
@@ -56,7 +57,7 @@ import UIKit
   }
   
   /// Color of the badge shadow
-  @IBInspectable var shadowColorBadge: UIColor = UIColor.black() {
+  @IBInspectable public var shadowColorBadge: UIColor = UIColor.black() {
     didSet {
       layer.shadowColor = shadowColorBadge.cgColor
       setNeedsDisplay()
@@ -64,31 +65,34 @@ import UIKit
   }
   
   /// Offset of the badge shadow
-  @IBInspectable var shadowOffsetBadge: CGSize = CGSize(width: 0, height: 0) {
+  @IBInspectable public var shadowOffsetBadge: CGSize = CGSize(width: 0, height: 0) {
     didSet {
       layer.shadowOffset = shadowOffsetBadge
       setNeedsDisplay()
     }
   }
   
-  convenience init() {
+  /// Initialize the badge view
+  convenience public init() {
     self.init(frame: CGRect())
   }
   
-  override init(frame: CGRect) {
+  /// Initialize the badge view
+  override public init(frame: CGRect) {
     super.init(frame: frame)
     
     setup()
   }
   
-  required init?(coder aDecoder: NSCoder) {
+  /// Initialize the badge view
+  required public init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     
     setup()
   }
   
   /// Add custom insets around the text
-  override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+  override public func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
     let rect = super.textRect(forBounds: bounds, limitedToNumberOfLines: numberOfLines)
     
     var insetsWithBorder = actualInsetsWithBorder()
@@ -104,7 +108,8 @@ import UIKit
     return result
   }
   
-  override func drawText(in rect: CGRect) {
+  /// Draws the label with insets
+  override public func drawText(in rect: CGRect) {
     layer.cornerRadius = rect.height / 2
     
     let insetsWithBorder = actualInsetsWithBorder()
@@ -120,7 +125,7 @@ import UIKit
   }
   
   /// Draw the background of the badge
-  override func draw(_ rect: CGRect) {
+  override public func draw(_ rect: CGRect) {
     let rectInset = rect.insetBy(dx: borderWidth/2, dy: borderWidth/2)
     let path = UIBezierPath(roundedRect: rectInset, cornerRadius: rect.height/2)
     
@@ -151,7 +156,7 @@ import UIKit
   
   /// Draw the stars in interface builder
   @available(iOS 8.0, *)
-  override func prepareForInterfaceBuilder() {
+  override public func prepareForInterfaceBuilder() {
     super.prepareForInterfaceBuilder()
     
     setup()
