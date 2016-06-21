@@ -8,13 +8,13 @@ class CreateBadgeFromCodeViewController: UIViewController {
   }
   
   private func createBadge() {
-    let badge = SwiftBadge()
+    let badge = BadgeSwift()
     view.addSubview(badge)
     configureBadge(badge)
     positionBadge(badge)
   }
   
-  private func configureBadge(_ badge: SwiftBadge) {
+  private func configureBadge(_ badge: BadgeSwift) {
     // Text
     badge.text = "2"
     

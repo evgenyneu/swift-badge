@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name        = "SwiftBadge"
-  s.version     = "2.0.1"
+  s.name        = "BadgeSwift"
+  s.version     = "2.0.2"
   s.license     = { :type => "MIT" }
   s.homepage    = "https://github.com/marketplacer/swift-badge"
   s.summary     = "Badge view for iOS written in Swift"
@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.authors     = { "Evgenii Neumerzhitckii" => "sausageskin@gmail.com" }
   s.source      = { :git => "https://github.com/marketplacer/swift-badge.git", :tag => s.version }
   s.screenshots  = "https://raw.githubusercontent.com/marketplacer/swift-badge/master/graphics/swift_badge_showcase_2.png"
-  s.source_files = "SwiftBadge/**/*.swift"
+  s.source_files = "BadgeSwift/**/*.swift"
   s.ios.deployment_target = "8.0"
 end

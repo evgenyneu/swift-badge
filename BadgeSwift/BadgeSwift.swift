@@ -6,7 +6,7 @@ import UIKit
  Project home: https://github.com/marketplacer/swift-badge
  
  */
-@IBDesignable class SwiftBadge: UILabel {
+@IBDesignable class BadgeSwift: UILabel {
   
   /// Background color of the badge
   @IBInspectable  var badgeColor: UIColor = UIColor.red() {

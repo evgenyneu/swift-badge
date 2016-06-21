@@ -1,16 +1,8 @@
-//
-//  ViewController.swift
-//  Demo-iOS
-//
-//  Created by Evgenii on 21/06/2016.
-//  Copyright © 2016 Marketplacer. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
-  @IBOutlet weak var badge: SwiftBadge!
+  
+  @IBOutlet weak var badge: BadgeSwift!
   
   @IBOutlet weak var valueStepper: UIStepper!
   @IBOutlet weak var insetWidthStepper: UIStepper!
@@ -28,7 +20,7 @@ class ViewController: UIViewController {
     insetHeightStepper.value = Double(badge.insets.height)
     fontSizeStepper.value = Double(badge.font.pointSize)
     borderWidthStepper.value = Double(badge.borderWidth)
-
+    
     updatebadgeValue()
     updateInsetValue()
     updateFontSizeValue()
