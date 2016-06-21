@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7E3884C71D1923BC00C0B03A"
-               BuildableName = "BadgeSwift-tvOS.framework"
+               BuildableName = "BadgeSwift.framework"
                BlueprintName = "BadgeSwift-tvOS"
                ReferencedContainer = "container:BadgeSwift.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7E3884C71D1923BC00C0B03A"
-            BuildableName = "BadgeSwift-tvOS.framework"
+            BuildableName = "BadgeSwift.framework"
             BlueprintName = "BadgeSwift-tvOS"
             ReferencedContainer = "container:BadgeSwift.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7E3884C71D1923BC00C0B03A"
-            BuildableName = "BadgeSwift-tvOS.framework"
+            BuildableName = "BadgeSwift.framework"
             BlueprintName = "BadgeSwift-tvOS"
             ReferencedContainer = "container:BadgeSwift.xcodeproj">
          </BuildableReference>

@@ -260,7 +260,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = BS677JRE62;
 						DevelopmentTeamName = "Evgenii Neumerzhitckii";
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -605,6 +605,7 @@
 				7E3884CE1D1923BC00C0B03A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
