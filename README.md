@@ -8,7 +8,7 @@
 
 ## Usage
 
-Copy [SwiftBadge.swift](https://github.com/marketplacer/swift-badge/blob/master/swift-badge/SwiftBadge.swift) to your project.
+Copy [SwiftBadge.swift](https://github.com/marketplacer/swift-badge/blob/master/SwiftBadge/SwiftBadge.swift) to your project.
 
 
 ### Creating a badge in Storyboard
