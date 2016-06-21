@@ -5,10 +5,27 @@
 * The badge is a subclass of UILabel view.
 * It can be created and customized from the Storyboard or programatically.
 
+## Setup (Swift 3.0)
+
+There are three ways you can add Sigma to your Xcode project.
+
+**Add source (iOS 7+)**
+
+Simply add [BadgeSwift.swift](https://github.com/marketplacer/swift-badge/blob/master/BadgeSwift/BadgeSwift.swift) file to your project.
+
+#### Setup with Carthage (iOS 8+)
+
+Alternatively, add `github "marketplacer/swift-badge" ~> 2.0` to your Cartfile and run `carthage update`.
+
+#### Setup with CocoaPods (iOS 8+)
+
+If you are using CocoaPods add this text to your Podfile and run `pod install`.
+
+    use_frameworks!
+    target 'Your target name'
+    pod 'SwiftBadge', '~> 2.0'
+
 ## Usage
-
-Copy [BadgeSwift.swift](https://github.com/marketplacer/swift-badge/blob/master/BadgeSwift/BadgeSwift.swift) to your project.
-
 
 ### Creating a badge in Storyboard
 
