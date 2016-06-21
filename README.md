@@ -4,7 +4,7 @@
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)][carthage]
 [![CocoaPods Version](https://img.shields.io/cocoapods/v/BadgeSwift.svg?style=flat)][cocoadocs]
-[![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)][cocoadocs]
+[![License](/LICENSE][cocoadocs]
 [![Platform](https://img.shields.io/cocoapods/p/BadgeSwift.svg?style=flat)][cocoadocs]
 [cocoadocs]: http://cocoadocs.org/docsets/BadgeSwift
 [carthage]: https://github.com/Carthage/Carthage
