@@ -57,9 +57,9 @@ class BadgeSwiftTests: XCTestCase {
   }
   
   func testSetShadowColor() {
-    badge.shadowColorBadge = UIColor.purple()
+    badge.shadowColorBadge = UIColor.purple
     
-    XCTAssertEqual(UIColor.purple(), UIColor(cgColor: badge.layer.shadowColor!))
+    XCTAssertEqual(UIColor.purple, UIColor(cgColor: badge.layer.shadowColor!))
   }
   
   func testSetShadowOffset() {
