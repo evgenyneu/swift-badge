@@ -8,6 +8,6 @@
 
 * Added tvOS support
 
-## .0.4 (2016-06-21)
+## 2.0.4 (2016-06-21)
 
 * Updated to Swift 3.0
