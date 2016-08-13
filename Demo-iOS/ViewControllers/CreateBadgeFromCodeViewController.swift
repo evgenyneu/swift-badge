@@ -25,23 +25,23 @@ class CreateBadgeFromCodeViewController: UIViewController {
     badge.font = UIFont.preferredFont(forTextStyle: UIFontTextStyleBody)
     
     // Text color
-    badge.textColor = UIColor.yellow()
+    badge.textColor = UIColor.yellow
     
     // Badge color
-    badge.badgeColor = UIColor.black()
+    badge.badgeColor = UIColor.black
     
     // Shadow
     badge.shadowOpacityBadge = 0.5
     badge.shadowOffsetBadge = CGSize(width: 0, height: 0)
     badge.shadowRadiusBadge = 1.0
-    badge.shadowColorBadge = UIColor.black()
+    badge.shadowColorBadge = UIColor.black
     
     // No shadow
     badge.shadowOpacityBadge = 0
     
     // Border width and color
     badge.borderWidth = 5.0
-    badge.borderColor = UIColor.magenta()
+    badge.borderColor = UIColor.magenta
   }
   
   private func positionBadge(_ badge: UIView) {

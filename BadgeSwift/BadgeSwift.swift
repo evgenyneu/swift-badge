@@ -10,7 +10,7 @@ import UIKit
 @IBDesignable public class BadgeSwift: UILabel {
   
   /// Background color of the badge
-  @IBInspectable public var badgeColor: UIColor = UIColor.red() {
+  @IBInspectable public var badgeColor: UIColor = UIColor.red {
     didSet {
       setNeedsDisplay()
     }
@@ -24,7 +24,7 @@ import UIKit
   }
   
   /// Color of the bardge border
-  @IBInspectable public var borderColor: UIColor = UIColor.white() {
+  @IBInspectable public var borderColor: UIColor = UIColor.white {
     didSet {
       invalidateIntrinsicContentSize()
     }
@@ -57,7 +57,7 @@ import UIKit
   }
   
   /// Color of the badge shadow
-  @IBInspectable public var shadowColorBadge: UIColor = UIColor.black() {
+  @IBInspectable public var shadowColorBadge: UIColor = UIColor.black {
     didSet {
       layer.shadowColor = shadowColorBadge.cgColor
       setNeedsDisplay()
