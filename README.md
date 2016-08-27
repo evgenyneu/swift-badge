@@ -74,7 +74,7 @@ badge.text = "2"
 badge.insets = CGSize(width: 12, height: 12)
 
 // Font
-badge.font = UIFont.preferredFont(forTextStyle: UIFontTextStyleBody)
+badge.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
 
 // Text color
 badge.textColor = UIColor.yellow
