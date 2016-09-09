@@ -30,7 +30,7 @@ If you are using CocoaPods add this text to your Podfile and run `pod install`.
 
     use_frameworks!
     target 'Your target name'
-    pod 'BadgeSwift', git: 'https://github.com/marketplacer/swift-badge.git', tag: '3.0.0'
+    pod 'BadgeSwift', '~> 3.0'
 
 ### Legacy Swift versions
 
