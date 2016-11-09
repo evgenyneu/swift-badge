@@ -71,6 +71,14 @@ import UIKit
       setNeedsDisplay()
     }
   }
+    
+  /// Radius of the badge
+  @IBInspectable public var cornerRadius: CGFloat = 0 {
+    didSet {
+      layer.cornerRadius = cornerRadius
+      setNeedsDisplay()
+    }
+  }
   
   /// Initialize the badge view
   convenience public init() {
@@ -110,7 +118,7 @@ import UIKit
   
   /// Draws the label with insets
   override public func drawText(in rect: CGRect) {
-    layer.cornerRadius = rect.height / 2
+    layer.cornerRadius = self.cornerRadius
     
     let insetsWithBorder = actualInsetsWithBorder()
     let insets = UIEdgeInsets(
@@ -127,11 +135,11 @@ import UIKit
   /// Draw the background of the badge
   override public func draw(_ rect: CGRect) {
     let rectInset = rect.insetBy(dx: borderWidth/2, dy: borderWidth/2)
-    let path = UIBezierPath(roundedRect: rectInset, cornerRadius: rect.height/2)
-    
+    let path = UIBezierPath(roundedRect: rectInset, cornerRadius: self.cornerRadius)
+
     badgeColor.setFill()
     path.fill()
-    
+
     if borderWidth > 0 {
       borderColor.setStroke()
       path.lineWidth = borderWidth

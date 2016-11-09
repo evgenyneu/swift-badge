@@ -69,5 +69,9 @@ class ViewController: UIViewController {
   private func formatBadgeValue(_ value: Double) -> String {
     return NSString(format: "%.0f", value) as String
   }
+  
+  @IBAction func onCornerRadiusStepperChanged(_ sender: UIStepper) {
+    badge.cornerRadius = CGFloat(sender.value)
+  }
 }
 
