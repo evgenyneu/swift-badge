@@ -71,11 +71,10 @@ import UIKit
       setNeedsDisplay()
     }
   }
-    
-  /// Radius of the badge
-  @IBInspectable public var cornerRadius: CGFloat = 0 {
+  
+  /// Corner radius of the badge. -1 if unspecified. When unspecified, the corner is fully rounded. Default: -1.
+  @IBInspectable public var badgeCornerRadius: CGFloat = -1 {
     didSet {
-      layer.cornerRadius = cornerRadius
       setNeedsDisplay()
     }
   }
@@ -118,7 +117,12 @@ import UIKit
   
   /// Draws the label with insets
   override public func drawText(in rect: CGRect) {
-    layer.cornerRadius = self.cornerRadius
+    if badgeCornerRadius >= 0 {
+      layer.cornerRadius = badgeCornerRadius
+    }else {
+      // Use fully rounded corner if radius is not specified
+      layer.cornerRadius = rect.height / 2
+    }
     
     let insetsWithBorder = actualInsetsWithBorder()
     let insets = UIEdgeInsets(
@@ -135,15 +139,26 @@ import UIKit
   /// Draw the background of the badge
   override public func draw(_ rect: CGRect) {
     let rectInset = rect.insetBy(dx: borderWidth/2, dy: borderWidth/2)
-    let path = UIBezierPath(roundedRect: rectInset, cornerRadius: self.cornerRadius)
+    
+    let actualCornerRadius = badgeCornerRadius >= 0 ? badgeCornerRadius : rect.height/2
+    
+    var path: UIBezierPath?
+    
+    if actualCornerRadius == 0 {
+      // Use rectangular path when corner radius is zero as a workaround
+      // a glith in the left top corner with UIBezierPath(roundedRect).
+      path = UIBezierPath(rect: rectInset)
+    } else {
+      path = UIBezierPath(roundedRect: rectInset, cornerRadius: actualCornerRadius)
+    }
 
     badgeColor.setFill()
-    path.fill()
+    path?.fill()
 
     if borderWidth > 0 {
       borderColor.setStroke()
-      path.lineWidth = borderWidth
-      path.stroke()
+      path?.lineWidth = borderWidth
+      path?.stroke()
     }
     
     super.draw(rect)
