@@ -67,4 +67,31 @@ class BadgeSwiftTests: XCTestCase {
     
     XCTAssertEqual(CGSize(width: 34, height: 52), badge.layer.shadowOffset)
   }
+  
+  // MARK: - Corner radius
+  
+  func testCornerRadius_default() {
+    badge.drawText(in: CGRect(origin: CGPoint(), size: CGSize(width: 30, height: 55)))
+    XCTAssertEqual(27.5, badge.layer.cornerRadius)
+  }
+  
+  func testCornerRadius_set() {
+    badge.cornerRadius = 11.345
+    badge.drawText(in: CGRect(origin: CGPoint(), size: CGSize(width: 30, height: 60)))
+    XCTAssertEqual(11.345, badge.layer.cornerRadius)
+  }
+  
+  func testCornerRadius_setZero() {
+    badge.cornerRadius = 0
+    badge.drawText(in: CGRect(origin: CGPoint(), size: CGSize(width: 30, height: 60)))
+    XCTAssertEqual(0, badge.layer.cornerRadius)
+  }
+  
+  func testCornerRadius_resetToDefault() {
+    badge.cornerRadius = 11.345
+    badge.drawText(in: CGRect(origin: CGPoint(), size: CGSize(width: 30, height: 60)))
+    badge.cornerRadius = -1
+    badge.drawText(in: CGRect(origin: CGPoint(), size: CGSize(width: 30, height: 63)))
+    XCTAssertEqual(31.5, badge.layer.cornerRadius)
+  }
 }

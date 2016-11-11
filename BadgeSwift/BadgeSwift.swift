@@ -73,7 +73,7 @@ import UIKit
   }
   
   /// Corner radius of the badge. -1 if unspecified. When unspecified, the corner is fully rounded. Default: -1.
-  @IBInspectable public var badgeCornerRadius: CGFloat = -1 {
+  @IBInspectable public var cornerRadius: CGFloat = -1 {
     didSet {
       setNeedsDisplay()
     }
@@ -117,8 +117,8 @@ import UIKit
   
   /// Draws the label with insets
   override public func drawText(in rect: CGRect) {
-    if badgeCornerRadius >= 0 {
-      layer.cornerRadius = badgeCornerRadius
+    if cornerRadius >= 0 {
+      layer.cornerRadius = cornerRadius
     }else {
       // Use fully rounded corner if radius is not specified
       layer.cornerRadius = rect.height / 2
@@ -140,7 +140,7 @@ import UIKit
   override public func draw(_ rect: CGRect) {
     let rectInset = rect.insetBy(dx: borderWidth/2, dy: borderWidth/2)
     
-    let actualCornerRadius = badgeCornerRadius >= 0 ? badgeCornerRadius : rect.height/2
+    let actualCornerRadius = cornerRadius >= 0 ? cornerRadius : rect.height/2
     
     var path: UIBezierPath?
     

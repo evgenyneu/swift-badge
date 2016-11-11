@@ -71,7 +71,7 @@ class ViewController: UIViewController {
   }
   
   @IBAction func onCornerRadiusStepperChanged(_ sender: UIStepper) {
-    badge.badgeCornerRadius = CGFloat(sender.value)
+    badge.cornerRadius = CGFloat(sender.value)
   }
 }
 
