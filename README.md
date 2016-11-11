@@ -56,6 +56,8 @@ Setup a [previous version](https://github.com/marketplacer/swift-badge/wiki/Lega
 
 ### Creating a badge from the code
 
+Add `import BadgeSwift` to your source code unless you used the file setup method.
+
 ```Swift
 let badge = BadgeSwift()
 view.addSubview(badge)
