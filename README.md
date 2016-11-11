@@ -22,7 +22,7 @@ Simply add [BadgeSwift.swift](https://github.com/marketplacer/swift-badge/blob/m
 
 #### Setup with Carthage (iOS 8+)
 
-Alternatively, add `github "marketplacer/swift-badge" ~> 3.0` to your Cartfile and run `carthage update`.
+Alternatively, add `github "marketplacer/swift-badge" ~> 4.0` to your Cartfile and run `carthage update`.
 
 #### Setup with CocoaPods (iOS 8+)
 
@@ -30,7 +30,7 @@ If you are using CocoaPods add this text to your Podfile and run `pod install`.
 
     use_frameworks!
     target 'Your target name'
-    pod 'BadgeSwift', '~> 3.0'
+    pod 'BadgeSwift', '~> 4.0'
 
 ### Legacy Swift versions
 
@@ -94,6 +94,10 @@ badge.shadowOpacityBadge = 0
 // Border width and color
 badge.borderWidth = 5.0
 badge.borderColor = UIColor.magenta
+
+// Customize the badge corner radius.
+// -1 if unspecified. When unspecified, the corner is fully rounded. Default: -1.
+badge.cornerRadius = 10
 ```
 
 ## Demo app
@@ -115,9 +119,10 @@ Here are some alternative badges for iOS.
 * [soffes/SAMBadgeView](https://github.com/soffes/SAMBadgeView)
 * [tmdvs/TDBadgedCell](https://github.com/tmdvs/TDBadgedCell)
 
-## Contributors
+## Thanks to 👍
 
-* Thanks to [amg1976](https://github.com/amg1976) for adding a border and redesigning the drawing.
+* [amg1976](https://github.com/amg1976) for adding a border and redesigning the drawing.
+* [gperdomor](https://github.com/gperdomor) for adding ability to customize corner radius.
 
 ## License
 
