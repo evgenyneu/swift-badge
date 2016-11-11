@@ -22,7 +22,7 @@ Simply add [BadgeSwift.swift](https://github.com/marketplacer/swift-badge/blob/m
 
 #### Setup with Carthage (iOS 8+)
 
-Alternatively, add `github "marketplacer/swift-badge" ~> 3.0` to your Cartfile and run `carthage update`.
+Alternatively, add `github "marketplacer/swift-badge" ~> 4.0` to your Cartfile and run `carthage update`.
 
 #### Setup with CocoaPods (iOS 8+)
 
@@ -30,7 +30,7 @@ If you are using CocoaPods add this text to your Podfile and run `pod install`.
 
     use_frameworks!
     target 'Your target name'
-    pod 'BadgeSwift', '~> 3.0'
+    pod 'BadgeSwift', '~> 4.0'
 
 ### Legacy Swift versions
 
