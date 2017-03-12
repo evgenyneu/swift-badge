@@ -7,31 +7,31 @@ import UIKit
  Project home: https://github.com/marketplacer/swift-badge
  
  */
-@IBDesignable public class BadgeSwift: UILabel {
+@IBDesignable open class BadgeSwift: UILabel {
   
   /// Background color of the badge
-  @IBInspectable public var badgeColor: UIColor = UIColor.red {
+  @IBInspectable open var badgeColor: UIColor = UIColor.red {
     didSet {
       setNeedsDisplay()
     }
   }
   
   /// Width of the badge border
-  @IBInspectable public var borderWidth: CGFloat = 0 {
+  @IBInspectable open var borderWidth: CGFloat = 0 {
     didSet {
       invalidateIntrinsicContentSize()
     }
   }
   
   /// Color of the bardge border
-  @IBInspectable public var borderColor: UIColor = UIColor.white {
+  @IBInspectable open var borderColor: UIColor = UIColor.white {
     didSet {
       invalidateIntrinsicContentSize()
     }
   }
   
   /// Badge insets that describe the margin between text and the edge of the badge.
-  @IBInspectable public var insets: CGSize = CGSize(width: 5, height: 2) {
+  @IBInspectable open var insets: CGSize = CGSize(width: 5, height: 2) {
     didSet {
       invalidateIntrinsicContentSize()
     }
@@ -41,7 +41,7 @@ import UIKit
   // --------------------------
   
   /// Opacity of the badge shadow
-  @IBInspectable public var shadowOpacityBadge: CGFloat = 0.5 {
+  @IBInspectable open var shadowOpacityBadge: CGFloat = 0.5 {
     didSet {
       layer.shadowOpacity = Float(shadowOpacityBadge)
       setNeedsDisplay()
@@ -49,7 +49,7 @@ import UIKit
   }
   
   /// Size of the badge shadow
-  @IBInspectable public var shadowRadiusBadge: CGFloat = 0.5 {
+  @IBInspectable open var shadowRadiusBadge: CGFloat = 0.5 {
     didSet {
       layer.shadowRadius = shadowRadiusBadge
       setNeedsDisplay()
@@ -57,7 +57,7 @@ import UIKit
   }
   
   /// Color of the badge shadow
-  @IBInspectable public var shadowColorBadge: UIColor = UIColor.black {
+  @IBInspectable open var shadowColorBadge: UIColor = UIColor.black {
     didSet {
       layer.shadowColor = shadowColorBadge.cgColor
       setNeedsDisplay()
@@ -65,7 +65,7 @@ import UIKit
   }
   
   /// Offset of the badge shadow
-  @IBInspectable public var shadowOffsetBadge: CGSize = CGSize(width: 0, height: 0) {
+  @IBInspectable open var shadowOffsetBadge: CGSize = CGSize(width: 0, height: 0) {
     didSet {
       layer.shadowOffset = shadowOffsetBadge
       setNeedsDisplay()
@@ -73,7 +73,7 @@ import UIKit
   }
   
   /// Corner radius of the badge. -1 if unspecified. When unspecified, the corner is fully rounded. Default: -1.
-  @IBInspectable public var cornerRadius: CGFloat = -1 {
+  @IBInspectable open var cornerRadius: CGFloat = -1 {
     didSet {
       setNeedsDisplay()
     }
@@ -99,7 +99,7 @@ import UIKit
   }
   
   /// Add custom insets around the text
-  override public func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
+  override open func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
     let rect = super.textRect(forBounds: bounds, limitedToNumberOfLines: numberOfLines)
     
     var insetsWithBorder = actualInsetsWithBorder()
@@ -116,7 +116,7 @@ import UIKit
   }
   
   /// Draws the label with insets
-  override public func drawText(in rect: CGRect) {
+  override open func drawText(in rect: CGRect) {
     if cornerRadius >= 0 {
       layer.cornerRadius = cornerRadius
     }else {
@@ -137,7 +137,7 @@ import UIKit
   }
   
   /// Draw the background of the badge
-  override public func draw(_ rect: CGRect) {
+  override open func draw(_ rect: CGRect) {
     let rectInset = rect.insetBy(dx: borderWidth/2, dy: borderWidth/2)
     
     let actualCornerRadius = cornerRadius >= 0 ? cornerRadius : rect.height/2
@@ -179,7 +179,7 @@ import UIKit
   
   /// Draw the stars in interface builder
   @available(iOS 8.0, *)
-  override public func prepareForInterfaceBuilder() {
+  override open func prepareForInterfaceBuilder() {
     super.prepareForInterfaceBuilder()
     
     setup()
