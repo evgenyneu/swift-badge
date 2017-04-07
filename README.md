@@ -2,12 +2,10 @@
 
 # A badge control for iOS and tvOS written in Swift
 
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)][carthage]
-[![CocoaPods Version](https://img.shields.io/cocoapods/v/BadgeSwift.svg?style=flat)][cocoadocs]
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![CocoaPods Version](https://img.shields.io/cocoapods/v/BadgeSwift.svg?style=flat)](http://cocoadocs.org/docsets/BadgeSwift)
 [![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)](/LICENSE)
-[![Platform](https://img.shields.io/cocoapods/p/BadgeSwift.svg?style=flat)][cocoadocs]
-[cocoadocs]: http://cocoadocs.org/docsets/BadgeSwift
-[carthage]: https://github.com/Carthage/Carthage
+[![Platform](https://img.shields.io/cocoapods/p/BadgeSwift.svg?style=flat)](http://cocoadocs.org/docsets/BadgeSwift)
 
 * The badge is a subclass of UILabel view.
 * It can be created and customized from the Storyboard or from the code.
