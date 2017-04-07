@@ -20,7 +20,7 @@ class BadgeSwiftTests: XCTestCase {
     let rect = badge.textRect(forBounds: initialRect, limitedToNumberOfLines: 1)
     
     XCTAssertEqual(61.0, rect.width)
-    XCTAssertEqual(54.5, rect.height)
+    XCTAssertEqual(54, rect.height.rounded())
   }
   
   func testCalculateTextRectangle_widthLessThanHeight() {
@@ -32,8 +32,8 @@ class BadgeSwiftTests: XCTestCase {
     
     let rect = badge.textRect(forBounds: initialRect, limitedToNumberOfLines: 1)
     
-    XCTAssertEqual(54.5, rect.width)
-    XCTAssertEqual(54.5, rect.height)
+    XCTAssertEqual(54, rect.width.rounded())
+    XCTAssertEqual(54, rect.height.rounded())
   }
   
   func testCenteredByDefault() {
