@@ -118,6 +118,7 @@ Here are some alternative badges for iOS.
 * [mustafaibrahim989/MIBadgeButton-Swift](https://github.com/mustafaibrahim989/MIBadgeButton-Swift)
 * [soffes/SAMBadgeView](https://github.com/soffes/SAMBadgeView)
 * [tmdvs/TDBadgedCell](https://github.com/tmdvs/TDBadgedCell)
+* [EddyBorja/MLPAccessoryBadge](https://github.com/EddyBorja/MLPAccessoryBadge)
 
 ## Thanks to 👍
 
