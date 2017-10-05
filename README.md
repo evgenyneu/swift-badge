@@ -10,7 +10,7 @@
 * The badge is a subclass of UILabel view.
 * It can be created and customized from the Storyboard or from the code.
 
-## Setup (Swift 3.0)
+## Setup
 
 There are three ways you can add BadgeSwift to your Xcode project.
 
