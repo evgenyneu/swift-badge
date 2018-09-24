@@ -22,7 +22,7 @@ class CreateBadgeFromCodeViewController: UIViewController {
     badge.insets = CGSize(width: 12, height: 12)
     
     // Font
-    badge.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
+    badge.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)
     
     // Text color
     badge.textColor = UIColor.yellow
@@ -51,20 +51,20 @@ class CreateBadgeFromCodeViewController: UIViewController {
     // Center the badge vertically in its container
     constraints.append(NSLayoutConstraint(
       item: badge,
-      attribute: NSLayoutAttribute.centerY,
-      relatedBy: NSLayoutRelation.equal,
+      attribute: NSLayoutConstraint.Attribute.centerY,
+      relatedBy: NSLayoutConstraint.Relation.equal,
       toItem: view,
-      attribute: NSLayoutAttribute.centerY,
+      attribute: NSLayoutConstraint.Attribute.centerY,
       multiplier: 1, constant: 0)
     )
     
     // Center the badge horizontally in its container
     constraints.append(NSLayoutConstraint(
       item: badge,
-      attribute: NSLayoutAttribute.centerX,
-      relatedBy: NSLayoutRelation.equal,
+      attribute: NSLayoutConstraint.Attribute.centerX,
+      relatedBy: NSLayoutConstraint.Relation.equal,
       toItem: view,
-      attribute: NSLayoutAttribute.centerX,
+      attribute: NSLayoutConstraint.Attribute.centerX,
       multiplier: 1, constant: 0)
     )
     

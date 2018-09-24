@@ -131,7 +131,7 @@ import UIKit
       bottom: insetsWithBorder.height,
       right: insetsWithBorder.width)
     
-    let rectWithoutInsets = UIEdgeInsetsInsetRect(rect, insets)
+    let rectWithoutInsets = rect.inset(by: insets)
     
     super.drawText(in: rectWithoutInsets)
   }

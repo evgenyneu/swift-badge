@@ -1,5 +1,11 @@
 # BadgeSwift version history
 
+
+## 6.0.0 (2018-09-24)
+
+* Updated to Swit 4.2.
+
+
 ## 5.0.0 (2017-03-12)
 
 * Make the BadgeSwift open, to allow subclassing.
