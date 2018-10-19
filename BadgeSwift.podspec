@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "BadgeSwift"
-  s.version     = "6.0.0"
+  s.version     = "7.0.0"
   s.license     = { :type => "MIT" }
   s.homepage    = "https://github.com/marketplacer/swift-badge"
   s.summary     = "Badge view for iOS and tvOS written in Swift"

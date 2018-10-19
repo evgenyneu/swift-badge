@@ -1,6 +1,11 @@
 # BadgeSwift version history
 
 
+## 7.0.0 (2018-10-20)
+
+* Removed a warning when used in an extension.
+
+
 ## 6.0.0 (2018-09-24)
 
 * Updated to Swit 4.2.
