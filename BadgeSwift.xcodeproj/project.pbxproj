@@ -296,7 +296,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = BS677JRE62;
 						DevelopmentTeamName = "Evgenii Neumerzhitckii";
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
 					7E13659F1D19170700C7468A = {
@@ -581,8 +581,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -602,8 +601,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.marketplacer.BadgeSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
