@@ -20,7 +20,7 @@ Simply add [BadgeSwift.swift](https://github.com/evgenyneu/swift-badge/blob/mast
 
 #### Setup with Carthage (iOS 8+)
 
-Alternatively, add `github "evgenyneu/swift-badge" ~> 7.0` to your Cartfile and run `carthage update`.
+Alternatively, add `github "evgenyneu/swift-badge" ~> 8.0` to your Cartfile and run `carthage update`.
 
 #### Setup with CocoaPods (iOS 8+)
 
@@ -28,7 +28,7 @@ If you are using CocoaPods add this text to your Podfile and run `pod install`.
 
     use_frameworks!
     target 'Your target name'
-    pod 'BadgeSwift', '~> 7.0'
+    pod 'BadgeSwift', '~> 8.0'
 
 ### Legacy Swift versions
 

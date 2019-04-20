@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "BadgeSwift"
-  s.version     = "7.0.0"
+  s.version     = "8.0.0"
   s.license     = { :type => "MIT" }
   s.homepage    = "https://github.com/marketplacer/swift-badge"
   s.summary     = "Badge view for iOS and tvOS written in Swift"
@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.source_files = "BadgeSwift/**/*.swift"
   s.ios.deployment_target = "8.0"
   s.tvos.deployment_target = "9.0"
-  s.swift_version = "4.2"
+  s.swift_versions = ["4.2", "5.0"]
 end

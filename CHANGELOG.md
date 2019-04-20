@@ -1,6 +1,11 @@
 # BadgeSwift version history
 
 
+## 9.0.0 (2019-04-20)
+
+* Updated to Swift 5.0.
+
+
 ## 7.0.0 (2018-10-20)
 
 * Removed a warning when used in an extension.
