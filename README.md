@@ -30,6 +30,12 @@ If you are using CocoaPods add this text to your Podfile and run `pod install`.
     target 'Your target name'
     pod 'BadgeSwift', '~> 8.0'
 
+#### Setup with Swift Package Manager
+
+* In Xcode 11+ select *File > Packages > Add Package Dependency...*.
+* Enter this project's URL: https://github.com/evgenyneu/swift-badge.git
+
+
 ### Legacy Swift versions
 
 Setup a [previous version](https://github.com/evgenyneu/swift-badge/wiki/Legacy-Swift-versions) of the library if you use an older version of Swift.
