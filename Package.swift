@@ -12,7 +12,8 @@ let package = Package(
         .target(name: "BadgeSwift", dependencies: [], path: "BadgeSwift"),
         .testTarget(
             name: "BadgeSwiftTests",
-            dependencies: ["BadgeSwift"]
+            dependencies: ["BadgeSwift"],
+            path: "BadgeSwiftTests"
         )
     ]
 )
