@@ -12,7 +12,7 @@
 
 ## Setup
 
-There are three ways you can add BadgeSwift to your Xcode project.
+There are various ways you can add BadgeSwift to your Xcode project.
 
 **Add source (iOS 7+)**
 
