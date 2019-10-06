@@ -46,7 +46,7 @@ Setup a [previous version](https://github.com/evgenyneu/swift-badge/wiki/Legacy-
 
 * Drag a **Label** to your view.
 * Set its `class` to `BadgeSwift` in identity inspector.
-* Set the `module` property to `BadgeSwift` if you used Carthage or CocoaPods setup methods.
+* Set the `module` property to `BadgeSwift` (unless you used the file setup method).
 
 <img src='https://raw.githubusercontent.com/evgenyneu/swift-badge/master/graphics/swift_badge_class_name_3.png' width='258' alt='Add badge to storyboard'>
 
