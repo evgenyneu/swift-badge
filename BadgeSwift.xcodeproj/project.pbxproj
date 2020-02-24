@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		624E021B2403EEA7009E6445 /* BadgeSwift.swift in Headers */ = {isa = PBXBuildFile; fileRef = 7E13659A1D19168D00C7468A /* BadgeSwift.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E1365931D1915E000C7468A /* BadgeSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E1365921D1915E000C7468A /* BadgeSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E13659B1D19168D00C7468A /* BadgeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E13659A1D19168D00C7468A /* BadgeSwift.swift */; };
 		7E1365A31D19170700C7468A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1365A21D19170700C7468A /* AppDelegate.swift */; };
@@ -195,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E1365931D1915E000C7468A /* BadgeSwift.h in Headers */,
+				624E021B2403EEA7009E6445 /* BadgeSwift.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
