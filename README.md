@@ -55,8 +55,6 @@ Setup a [previous version](https://github.com/evgenyneu/swift-badge/wiki/Legacy-
 
 <img src='https://github.com/evgenyneu/swift-badge/blob/master/graphics/swift_badge_attributes_inspector_2.png' width='374' alt='Change badge properties in attribute inspector'>
 
-*Note*: Carthage setup method does not allow to customize Cosmos view from the storyboard, please do it from code instead.
-
 
 ### Creating a badge from the code
 
